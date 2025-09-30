@@ -6,11 +6,14 @@
 en:
   languageCode: en-us
   contentDir: content/en
+  title: M-SE0K
+  params:
+    description: English site description
 
 # Uncomment the lines below to configure your website in a second language.
 ko:
   languageCode: ko
   contentDir: content/ko
-  title: 한국어 사이트 제목
+  title: M-SE0K
   params:
     description: 한국어 사이트 설명

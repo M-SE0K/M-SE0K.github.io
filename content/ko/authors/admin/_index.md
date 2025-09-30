@@ -50,7 +50,15 @@ social:
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/m._.se0k
-
+  - icon: youtube
+    icon_pack: fab
+    link: https://youtu.be/ucwpvU6zb9M?si=XNaGgVfaQAiOiKPN
+  - icon: slack
+    icon_pack: fab
+    link: https://cilab-nl26240.slack.com/team/U098SHZ2KUY
+  - icon: figma
+    icon_pack: fab
+    link: https://www.figma.com/@m_se0k
 # Uncomment below for Github link
 #- icon: github
 #  icon_pack: fab

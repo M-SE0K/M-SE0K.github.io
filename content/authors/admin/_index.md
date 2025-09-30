@@ -44,13 +44,13 @@ bio: My research interests include distributed robotics, mobile computing and pr
 social:
   - icon: github
     icon_pack: fab
-    link: https://github.com/M-SE0K# For a direct email link, use "mailto:test@example.org".
+    link: https://github.com/M-SE0K For a direct email link, use "mailto:test@example.org".
   - icon: discord
     icon_pack: fab
-    link: https://twitter.com/wowchemy
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/m._.se0k
+
 # Uncomment below for Github link
 #- icon: github
 #  icon_pack: fab

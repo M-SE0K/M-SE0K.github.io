@@ -116,6 +116,14 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
+// Ensure project card images fill the card width uniformly
+.view-card .img-hover-zoom .article-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
 .wg-about-avatar .avatar {
   width: auto;
   height: auto;

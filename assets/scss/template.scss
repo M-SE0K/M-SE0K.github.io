@@ -95,8 +95,8 @@ ul.network-icon .big-icon {
 .avatar {
   width: auto;
   height: auto;
-  max-width: 225px;
-  max-height: 225px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 // Prevent stretching on About page with narrow container
@@ -115,3 +115,10 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
+
+.wg-about-avatar .avatar {
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+  }

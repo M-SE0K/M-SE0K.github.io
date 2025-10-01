@@ -1,0 +1,17 @@
+main:
+  - name: Contact
+    url: /contact/
+    weight: 10
+  - name: Challenge
+    url: /challenge/
+    weight: 20
+  - name: About
+    url: /about/
+    weight: 30
+  - name: Projects
+    url: /project/
+    weight: 40
+  - name: Travel
+    url: /travel/
+    weight: 50
+

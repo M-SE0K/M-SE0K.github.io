@@ -130,3 +130,63 @@ ul.network-icon .big-icon {
   max-width: 150px;
   max-height: 150px;
   }
+
+// -------------------------------------------------------------------
+// Menu & dropdown hover styles (match theme colors in data/themes/custom.toml)
+// Light:  primary #2962ff
+// Dark:   primary #bbdefb
+// -------------------------------------------------------------------
+
+.navbar .navbar-nav .nav-link {
+  transition: color 0.15s ease, background-color 0.15s ease;
+  border-radius: 6px;
+  color: #2b2b2b; // default light text
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #2962ff;
+  background-color: rgba(41, 98, 255, 0.08);
+  text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #2962ff;
+}
+
+.dark .navbar .navbar-nav .nav-link:hover,
+.dark .navbar .navbar-nav .nav-link:focus {
+  color: #bbdefb;
+  background-color: rgba(187, 222, 251, 0.12);
+}
+
+.dark .navbar .navbar-nav .nav-link {
+  color: #e2e8f0; // default dark text
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+}
+
+.dropdown-menu .dropdown-item {
+  transition: color 0.15s ease, background-color 0.15s ease, padding-left 0.15s ease;
+  border-radius: 6px;
+  color: #2b2b2b; // default light text
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  color: #2962ff;
+  background-color: rgba(41, 98, 255, 0.08);
+  padding-left: 1rem;
+}
+
+.dark .dropdown-menu .dropdown-item:hover,
+.dark .dropdown-menu .dropdown-item:focus {
+  color: #bbdefb;
+  background-color: rgba(187, 222, 251, 0.12);
+}
+
+.dark .dropdown-menu .dropdown-item {
+  color: #e2e8f0; // default dark text
+}

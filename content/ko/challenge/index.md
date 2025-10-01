@@ -1,5 +1,13 @@
 ---
 title: 챌린지
+type: page
+summary: 개인 도전 과정을 기록합니다.
+---
+
+챌린지 메인 페이지입니다.
+
+---
+title: 챌린지
 date: 2025-10-01
 
 type: landing

@@ -4,18 +4,62 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: 연락처
-    url: /contact/
+  - name: 소개
+    url: /about/
     weight: 10
+    identifier: about
+  - name: 자기소개
+    url: /about/#about
+    parent: about
+    weight: 11
+  - name: 경력사항
+    url: /about/#experience
+    parent: about
+    weight: 12
+
   - name: 챌린지
     url: /challenge/
     weight: 20
-  - name: 소개
-    url: /about/
-    weight: 30
+    identifier: challenge
+  - name: 1일1알고리즘
+    url: /challenge/one-day-one-algorithm/
+    parent: challenge
+    weight: 21
+  - name: 대회 및 코테
+    url: /challenge/contests-coding-tests/
+    parent: challenge
+    weight: 22
+
   - name: 프로젝트
     url: /project/
-    weight: 40
+    weight: 30
+    identifier: project
+  - name: JBSW-NOW
+    url: /project/jbsw-now/
+    parent: project
+    weight: 31
+  - name: escargot
+    url: /project/escargot/
+    parent: project
+    weight: 32
+  - name: cleanBot
+    url: /project/movecleanbot/
+    parent: project
+    weight: 33
+    
   - name: 여행
     url: /travel/
-    weight: 50
+    weight: 40
+    identifier: travel
+  - name: 나고야
+    url: /travel/nagoya/
+    parent: travel
+    weight: 41
+  - name: 홍콩/마카오
+    url: /travel/hongkong-macau/
+    parent: travel
+    weight: 42
+
+  - name: 연락처
+    url: /contact/
+    weight: 60

@@ -1,5 +1,13 @@
 ---
 title: 여행
+type: page
+summary: 여행 기록
+---
+
+여행 메인 페이지입니다.
+
+---
+title: 여행
 date: 2025-10-01
 
 type: landing

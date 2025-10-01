@@ -1,13 +1,22 @@
 main:
   - name: Contact
     url: /contact/
-    weight: 10
+    weight: 60
   - name: Challenge
     url: /challenge/
     weight: 20
   - name: About
     url: /about/
-    weight: 30
+    weight: 10
+    identifier: about
+  - name: Education
+    url: /about/education/
+    parent: about
+    weight: 31
+  - name: Experience
+    url: /about/experience/
+    parent: about
+    weight: 32
   - name: Projects
     url: /project/
     weight: 40

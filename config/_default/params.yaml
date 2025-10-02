@@ -20,6 +20,7 @@ marketing:
     org_name: ''
     description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
     twitter: 'GetResearchDev'
+    image: 'media/icon.png'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -108,3 +109,7 @@ extensions:
     local_backend: false
   academicons:
     enable: true
+
+# Default Open Graph/Twitter preview image (used by Hugo/Wowchemy)
+images:
+  - '/media/icon.png'

@@ -1,35 +1,75 @@
-# [Hugo Portfolio Theme](https://github.com/wowchemy/starter-hugo-portfolio-theme)
+# M-SE0K Portfolio (Hugo + HugoBlox/Wowchemy)
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+개인 포트폴리오 사이트 저장소입니다. HugoBlox 기반으로 다국어(ko/en), 커스텀 메뉴, 테마 컬러, SCSS 오버라이드 등을 사용합니다.
 
-The **Hugo Portfolio Template** empowers you to easily create a portfolio website. Make it your own by choosing a color theme and grid layout!
+![Preview](preview.png)
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## 빠른 시작
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+개발 서버 실행:
 
-[Check out the latest demo](https://hugo-portfolio-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
-
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
-
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
-
-## We ask you, humbly, to support this open source movement
-
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
-
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
-
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
-
-
+```bash
 tools/hugo/bin/hugo server -D
+```
+
+프로덕션 빌드(정적 파일 생성 → `public/`):
+
+```bash
+tools/hugo/bin/hugo --minify
+```
+
+## 주요 경로(커스터마이징)
+
+- 메뉴 구성: `config/_default/menus.yaml`
+  - 상위/하위 메뉴 추가, `identifier`/`parent`로 드롭다운 구성
+
+- 다국어/사이트 타이틀: `config/_default/languages.yaml`
+  - `ko.title`, `en.title` 값 변경으로 헤더 타이틀 텍스트 수정
+
+- 헤더 옵션: `config/_default/params.yaml`
+  - `header.navbar.show_logo: true` 로고 표시, 검색/라이트/다크 버튼 등 토글
+
+- 테마 색상: `data/themes/custom.toml`
+  - `[light].primary`, `menu_text_active`, `[dark].primary` 등 포인트 컬러 설정
+
+- SCSS 오버라이드: `assets/scss/template.scss`
+  - 네비/드롭다운 호버, 글꼴 색, 로고 크기 등 스타일 커스터마이즈
+
+- 로고/아이콘 이미지: `assets/media/icon.png`
+  - 정사각 PNG(sRGB, 256~512px)로 교체하면 헤더 아이콘/파비콘이 갱신됩니다
+
+- 컨택트 배경(ko/en): `content/ko/contact/index.md`, `content/en/contact/index.md`
+  - 섹션의 `design.background.image.filename` 에 배경 이미지 지정 (예: `contact.png`)
+  - 투명도 `image_darken`, 텍스트 가독성 `text_color_light` 조절
+
+## 이미지 사용 주의(빌드 오류 예방)
+
+Hugo 이미지 파이프라인에서 "unknown format" 오류가 발생하면 아래처럼 재인코딩하세요.
+
+PNG 재인코딩(권장):
+
+```bash
+magick assets/media/contact.png -strip -colorspace sRGB -define png:color-type=2 -depth 8 assets/media/contact.png
+```
+
+JPG 재인코딩(슬라이더 이미지 등):
+
+```bash
+magick assets/media/Slider/img1.jpg -strip -interlace none -colorspace sRGB -quality 90 assets/media/Slider/img1.jpg
+```
+
+WebP로 변환하여 용량 절감:
+
+```bash
+magick assets/media/contact.png -strip -quality 90 assets/media/contact.webp
+# 그런 다음 content의 filename을 contact.webp 로 변경
+```
+
+## 배포
+
+- Netlify 사용 시 `netlify.toml` 기준으로 자동 배포됩니다.
+- 수동 배포는 `public/` 폴더를 정적 호스팅에 업로드하세요.
+
+## 라이선스
+
+개인 포트폴리오 용도로 사용됩니다. 테마는 HugoBlox/Wowchemy에 의해 제공됩니다.

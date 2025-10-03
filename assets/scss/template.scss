@@ -286,3 +286,37 @@ ul.network- .big-icon {
   flex: 0 0 auto;
 }
 
+// -------------------------------------------------------------------
+// Challenge section: left align content and layout
+// -------------------------------------------------------------------
+.home-section#challenge .container .row.justify-content-center {
+  justify-content: flex-start !important;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.home-section#challenge,
+.home-section#challenge .article-style {
+  text-align: left !important;
+}
+
+.home-section#challenge .container .col-12.col-lg-8 {
+  margin-left: 0 !important;
+}
+
+/* Make challenge container full-width and left-anchored */
+.home-section#challenge .container {
+  max-width: none !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Let the inner column span full width */
+.home-section#challenge .container .col-12.col-lg-8 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+

@@ -21,7 +21,6 @@ design:
 ---
 
 <div id="intro"></div>
-<div id="experience"></div>
 
 👋 **안녕하세요👋** 
 

@@ -5,58 +5,58 @@
 
 main:
   - name: 소개
-    url: /about/
+    url: /#intro
     weight: 10
     identifier: about
   - name: 자기소개
-    url: /about/#about
+    url: /#intro
     parent: about
     weight: 11
   - name: 경력사항
-    url: /about/#experience
+    url: /#experience
     parent: about
     weight: 12
 
   - name: 챌린지
-    url: /challenge/
+    url: /#challenge
     weight: 20
     identifier: challenge
   - name: 1일1알고리즘
-    url: /challenge/one-day-one-algorithm/
+    url: /#challenge-algorithm
     parent: challenge
     weight: 21
   - name: 대회 및 코테
-    url: /challenge/contests-coding-tests/
+    url: /#challenge-contest
     parent: challenge
     weight: 22
 
   - name: 프로젝트
-    url: /project/
+    url: /#portfolio
     weight: 30
     identifier: project
   - name: JBSW-NOW
-    url: /project/jbsw-now/
+    url: /#project-jbsw
     parent: project
     weight: 31
   - name: escargot
-    url: /project/escargot/
+    url: /#project-escargot
     parent: project
     weight: 32
   - name: cleanBot
-    url: /project/movecleanbot/
+    url: /#project-cleanbot
     parent: project
     weight: 33
     
   - name: 여행
-    url: /travel/
+    url: /#travel
     weight: 40
     identifier: travel
   - name: 나고야
-    url: /travel/nagoya/
+    url: /#travel-nagoya
     parent: travel
     weight: 41
   - name: 홍콩/마카오
-    url: /travel/hongkong-macau/
+    url: /#travel-hkmc
     parent: travel
     weight: 42
 

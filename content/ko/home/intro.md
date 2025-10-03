@@ -9,6 +9,8 @@ headless: true
 weight: 10
 
 author: admin
+design:
+  css_class: snap-section
 #design:
 #  background:
 #    color: '#090a0b'
@@ -17,6 +19,9 @@ author: admin
 #      path:  # enter filename of a video in /assets/media
 #  css_class: fullscreen
 ---
+
+<div id="intro"></div>
+<div id="experience"></div>
 
 👋 **안녕하세요👋** 
 

@@ -36,9 +36,10 @@ content:
       tag: Compiler
 
 design:
-  columns: '1'
-  view: masonry
-  flip_alt_rows: true
+  columns: '3'
+  view: card
+  flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
+  css_class: snap-section
 ---

@@ -43,8 +43,9 @@ content:
         fit: cover
 
 design:
-  slide_height: 60vh
-  is_fullscreen: false
+  slide_height: 100vh
+  is_fullscreen: true
+  css_class: snap-section
 ---
 
 

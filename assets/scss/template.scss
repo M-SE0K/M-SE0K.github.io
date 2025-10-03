@@ -5,6 +5,30 @@ body {
   background-color: rgb(247, 250, 252);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* 홈: 섹션 단위 스크롤 스냅 */
+body {
+  scroll-snap-type: y mandatory;
+}
+
+/* 스냅 대상 섹션만 풀스크린 정렬 */
+.home-section.snap-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+}
+
+/* 고정 헤더 높이만큼 앵커 위치 보정 */
+section[id],
+div[id] {
+  scroll-margin-top: 80px;
+}
+
 .article-container {
   background-color: #fff;
   border-radius: 15px;
@@ -40,11 +64,25 @@ body {
 
 // custom section padding
 .home-section {
-  padding: 1rem 0;
+  /* Default: apply snap to all home sections */
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .home-section.wg-about-avatar {
   padding: 0;
+}
+
+/* Opt-out: disable snap for specific sections when necessary */
+.home-section.no-snap {
+  min-height: auto;
+  scroll-snap-align: none;
+  scroll-snap-stop: normal;
+  display: block;
 }
 
 #profile .network-icon {

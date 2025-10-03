@@ -12,6 +12,7 @@ html {
 /* 홈: 섹션 단위 스크롤 스냅 */
 body {
   scroll-snap-type: y mandatory;
+  overscroll-behavior-y: none;
 }
 
 /* 스냅 대상 섹션만 풀스크린 정렬 */
@@ -62,14 +63,46 @@ div[id] {
   box-shadow: none !important; // 'important' to override dark mode box-shadow too.
 }
 
+// Transparent header by default; show background on hover over header area
+.page-header .navbar {
+  background-color: transparent !important;
+  transition: background-color 0.2s ease;
+}
+
+// Ensure header overlays page content
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; // above content and sliders
+}
+
+.page-header:hover .navbar,
+.page-header header:hover .navbar,
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark .page-header .navbar {
+  background-color: transparent !important;
+}
+
+.dark .page-header:hover .navbar,
+.dark .page-header header:hover .navbar,
+.dark .navbar:hover {
+  background-color: rgba(26, 32, 44, 0.9) !important;
+}
+
 // custom section padding
 .home-section {
   /* Default: apply snap to all home sections */
-  min-height: 100vh;
+  height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
   align-items: center;
+  overflow: hidden;
   padding: 0;
 }
 
@@ -228,3 +261,28 @@ ul.network- .big-icon {
 .dark .dropdown-menu .dropdown-item {
   color: #e2e8f0; // default dark text
 }
+
+// -------------------------------------------------------------------
+// Portfolio: horizontal scrolling cards
+// -------------------------------------------------------------------
+.wg-portfolio .projects-container {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: visible;
+  scroll-snap-type: none;
+  padding-bottom: 0.5rem;
+}
+
+.wg-portfolio .isotope {
+  height: auto;
+}
+
+.wg-portfolio .project-item {
+  position: static !important; // override Isotope absolute positioning
+  transform: none !important;  // override Isotope transforms
+  scroll-snap-align: none;
+  flex: 0 0 auto;
+}
+

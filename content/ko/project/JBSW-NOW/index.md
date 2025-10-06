@@ -7,3 +7,5 @@ tags:
 date: 2025-09-27
 external_link: https://github.com/M-SE0K/JBSW-NOW
 ---
+
+<div id="project-jbsw-now"></div>

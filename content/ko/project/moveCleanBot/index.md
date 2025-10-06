@@ -6,3 +6,5 @@ tags:
 date: 2025-08-01
 external_link: https://github.com/M-SE0K/move-internship
 ---
+
+<div id="project-cleanbot"></div>

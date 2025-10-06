@@ -24,6 +24,7 @@ content:
   # To show all items, set `tag` to "*".
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
+  
   filter_button:
     - name: All
       tag: '*'
@@ -41,3 +42,6 @@ design:
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
 ---
+
+<div id="type"></div>
+

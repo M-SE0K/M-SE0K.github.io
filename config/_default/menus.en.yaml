@@ -2,24 +2,33 @@ main:
   - name: Contact
     url: /contact/
     weight: 60
-  - name: Challenge
-    url: /challenge/
-    weight: 20
   - name: About
     url: /about/
     weight: 10
     identifier: about
-  - name: Education
-    url: /about/education/
-    parent: about
-    weight: 31
   - name: Experience
-    url: /about/experience/
+    url: /experience/
     parent: about
-    weight: 32
+    weight: 11
+  - name: Challenge
+    url: /challenge/
+    weight: 20
   - name: Projects
-    url: /project/
+    url: /#type
     weight: 40
+    identifier: project
+  - name: JBSW-NOW
+    url: /#type
+    parent: project
+    weight: 41
+  - name: Escargot
+    url: /#type
+    parent: project
+    weight: 42
+  - name: Clean Bot
+    url: /#type
+    parent: project
+    weight: 43
   - name: Travel
     url: /travel/
     weight: 50

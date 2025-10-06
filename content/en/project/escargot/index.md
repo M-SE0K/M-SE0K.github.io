@@ -6,3 +6,5 @@ tags:
 date: 2025-09-01
 external_link: https://github.com/M-SE0K/escargot
 ---
+
+<div id="project-escargot"></div>

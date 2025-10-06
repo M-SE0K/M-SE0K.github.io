@@ -13,37 +13,37 @@ main:
     parent: about
     weight: 11
   - name: 경력사항
-    url: /#experience
+    url: /experience/
     parent: about
     weight: 12
 
   - name: 챌린지
-    url: /#challenge
+    url: /challenge/
     weight: 20
     identifier: challenge
   - name: 1일1알고리즘
-    url: /#challenge-algorithm
+    url: /challenge/one-day-one-algorithm/
     parent: challenge
     weight: 21
   - name: 대회 및 코테
-    url: /#challenge-contest
+    url: /challenge/contests-coding-tests/
     parent: challenge
     weight: 22
 
   - name: 프로젝트
-    url: /#portfolio
+    url: /#type
     weight: 30
     identifier: project
   - name: JBSW-NOW
-    url: /#project-jbsw
+    url: /#type
     parent: project
     weight: 31
   - name: escargot
-    url: /#project-escargot
+    url: /#type
     parent: project
     weight: 32
   - name: cleanBot
-    url: /#project-cleanbot
+    url: /#type
     parent: project
     weight: 33
     

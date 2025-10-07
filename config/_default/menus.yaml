@@ -22,7 +22,7 @@ main:
     weight: 20
     identifier: challenge
   - name: 1일1알고리즘
-    url: /challenge/one-day-one-algorithm/
+    url: /one-day-one-algorithm/
     parent: challenge
     weight: 21
   - name: 대회 및 코테

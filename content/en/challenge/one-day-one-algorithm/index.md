@@ -1,7 +1,7 @@
 ---
-title: 1일1알고리즘
+title: One Day One Algorithm
 type: page
-summary: 하루 하나 알고리즘 풀이 기록
+summary: Daily algorithm problem solving records
 ---
 
 <style>
@@ -192,14 +192,14 @@ summary: 하루 하나 알고리즘 풀이 기록
 <div class="algorithm-container">
 
 <div class="timeline-header">
-  <h2>🧮 1일 1알고리즘</h2>
-  <p>매일 하나씩 알고리즘 문제를 풀며 실력을 향상시켜 나가는 기록입니다</p>
+  <h2>🧮 One Day One Algorithm</h2>
+  <p>Daily algorithm problem solving records to improve coding skills</p>
 </div>
 
 <div class="stats-grid">
   <div class="stat-card">
     <div class="stat-number">0</div>
-    <div class="stat-label">총 문제 수</div>
+    <div class="stat-label">Total Problems</div>
   </div>
   <div class="stat-card">
     <div class="stat-number">0</div>
@@ -216,9 +216,9 @@ summary: 하루 하나 알고리즘 풀이 기록
 </div>
 
 <div class="problem-grid">
-  <!-- 문제 카드 예시 (실제로는 동적으로 추가) -->
+  <!-- Example problem cards -->
   
-  <!-- 예시 문제 카드 1 -->
+  <!-- Example problem card 1 -->
   <div class="problem-card">
     <div class="problem-platform">LeetCode</div>
     <div class="problem-title">Two Sum</div>
@@ -233,62 +233,62 @@ summary: 하루 하나 알고리즘 풀이 기록
       <span class="tag">Hash Table</span>
     </div>
     
-    <a href="#" class="solution-link">📝 해설 보기</a>
+    <a href="#" class="solution-link">📝 View Solution</a>
   </div>
 
-  <!-- 예시 문제 카드 2 -->
+  <!-- Example problem card 2 -->
   <div class="problem-card">
     <div class="problem-platform">BOJ</div>
-    <div class="problem-title">백준 1000번: A+B</div>
+    <div class="problem-title">BOJ 1000: A+B</div>
     <span class="problem-difficulty difficulty-easy">Easy</span>
     
     <div class="problem-description">
-      두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+      Write a program that takes two integers A and B as input and outputs A+B.
     </div>
     
     <div class="problem-tags">
-      <span class="tag">구현</span>
-      <span class="tag">사칙연산</span>
+      <span class="tag">Implementation</span>
+      <span class="tag">Arithmetic</span>
     </div>
     
-    <a href="#" class="solution-link">📝 해설 보기</a>
+    <a href="#" class="solution-link">📝 View Solution</a>
   </div>
 </div>
 
 <div class="empty-state">
-  <h3>🚀 새로운 도전을 시작해보세요!</h3>
-  <p>아직 풀린 문제가 없습니다. 첫 번째 알고리즘 문제를 풀어보세요!</p>
-  <a href="#" class="add-problem-btn">➕ 첫 문제 추가하기</a>
+  <h3>🚀 Start a New Challenge!</h3>
+  <p>No problems solved yet. Try your first algorithm problem!</p>
+  <a href="#" class="add-problem-btn">➕ Add First Problem</a>
 </div>
 
-## 📊 진행 상황
+## 📊 Progress
 
-### 이번 달 목표
-- [ ] 목표 문제 수: 30문제
-- [ ] 현재 진행률: 0/30 (0%)
+### This Month's Goal
+- [ ] Target: 30 problems
+- [ ] Current Progress: 0/30 (0%)
 
-### 문제 유형별 통계
-- **구현**: 0문제
-- **그래프**: 0문제  
-- **동적계획법**: 0문제
-- **자료구조**: 0문제
-- **수학**: 0문제
+### Statistics by Type
+- **Implementation**: 0 problems
+- **Graph**: 0 problems  
+- **Dynamic Programming**: 0 problems
+- **Data Structures**: 0 problems
+- **Math**: 0 problems
 
-### 플랫폼별 통계
-- **LeetCode**: 0문제
-- **백준**: 0문제
-- **프로그래머스**: 0문제
+### Statistics by Platform
+- **LeetCode**: 0 problems
+- **BOJ**: 0 problems
+- **Programmers**: 0 problems
 
-## 💡 풀이 노트
+## 💡 Solution Notes
 
-### 자주 사용하는 패턴
-- **Two Pointer**: 정렬된 배열에서 두 값을 찾을 때
-- **Sliding Window**: 연속된 부분배열 문제
-- **Hash Map**: 빠른 검색이 필요할 때
+### Common Patterns
+- **Two Pointer**: Finding two values in sorted arrays
+- **Sliding Window**: Consecutive subarray problems
+- **Hash Map**: Fast search operations
 
-### 학습 포인트
-- 시간복잡도와 공간복잡도 분석
-- 다양한 접근 방법 시도
-- 코드 최적화 연습
+### Learning Points
+- Time and space complexity analysis
+- Trying different approaches
+- Code optimization practice
 
 </div>

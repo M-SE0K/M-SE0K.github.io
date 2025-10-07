@@ -1,5 +1,5 @@
 ---
-title: "Contests & Coding Tests"
+title: ""
 type: page
 summary: "Algorithm contest and coding test participation records"
 date: 2025-10-07

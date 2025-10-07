@@ -5,31 +5,39 @@ summary: Daily algorithm problem solving records
 ---
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 .algorithm-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .stat-card {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 15px;
-  padding: 1.5rem;
+  border-radius: 0;
+  padding: 2rem;
   text-align: center;
   color: white;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,0.1);
   transition: transform 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .stat-number {
@@ -46,22 +54,24 @@ summary: Daily algorithm problem solving records
 .problem-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .problem-card {
   background: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  border-left: 5px solid #667eea;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0;
+  padding: 2rem;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .problem-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: scale(1.02);
+  background: #f8f9fa;
+  z-index: 1;
 }
 
 .problem-title {
@@ -176,16 +186,23 @@ summary: Daily algorithm problem solving records
 
 .timeline-header {
   text-align: center;
-  margin: 2rem 0;
-  padding: 2rem;
+  margin: 0;
+  padding: 3rem 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 15px;
+  border-radius: 0;
   color: white;
+  width: 100%;
 }
 
 .timeline-header h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+}
+
+.timeline-header p {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
 }
 </style>
 

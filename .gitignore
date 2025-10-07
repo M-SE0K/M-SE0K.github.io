@@ -7,3 +7,5 @@ public/
 assets/jsconfig.json
 tools/hugo/bin/hugo
 tools/hugo/bin/
+
+auto_commit.sh

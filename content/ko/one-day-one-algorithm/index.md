@@ -1,5 +1,5 @@
 ---
-title: "1일1알고리즘"
+title: ""
 type: page
 summary: "하루 하나 알고리즘 풀이 기록"
 date: 2025-10-07
@@ -7,8 +7,9 @@ date: 2025-10-07
 
 <style>
 .algorithm-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
   padding: 2rem;
 }
 
@@ -210,7 +211,7 @@ date: 2025-10-07
 <div class="algorithm-container">
 
 <div class="timeline-header">
-  <h2>🧮 1일1알고리즘</h2>
+  <h2>알고리즘</h2>
   <p>매일 하나씩 알고리즘 문제를 풀며 실력을 향상시켜 나가는 기록입니다</p>
 </div>
 
@@ -236,7 +237,7 @@ date: 2025-10-07
 <div class="month-section">
   <div class="month-header">
     <h3 class="month-title">📅 2025년 9월 진행 내역</h3>
-    <p>Solved.ac 기준 Bronze ~ Silver 난이도 문제 중심</p>
+    <p>Solved.ac 기준 Gold ~ Silver 난이도 문제 중심</p>
   </div>
 
   <div class="month-stats">
@@ -272,203 +273,7 @@ date: 2025-10-07
       <div class="problem-platform">백준</div>
       <div class="problem-title">1000번: A+B</div>
       <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">사칙연산</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/1000" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">2557번: Hello World</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        Hello World!를 출력하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/2557" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">10869번: 사칙연산</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        두 자연수 A와 B가 주어진다. 이때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">사칙연산</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/10869" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">2753번: 윤년</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        연도가 주어졌을 때, 윤년이면 1, 아니면 0을 출력하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">수학</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/2753" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">10818번: 최소, 최대</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">정렬</span>
-      </div>ps a
-      
-      <a href="https://www.acmicpc.net/problem/10818" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">2562번: 최댓값</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/2562" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">2577번: 숫자의 개수</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        세 개의 자연수 A, B, C가 주어질 때 A × B × C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">수학</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/2577" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">2675번: 문자열 반복</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        문자열 S를 입력받은 후에, 각 문자를 R번 반복해 새 문자열 P를 만든 후 출력하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">문자열</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/2675" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">1152번: 단어의 개수</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">문자열</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/1152" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">2908번: 상수</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        상근이의 동생 상수는 수학을 정말 못한다. 상수는 숫자를 읽을 때 거꾸로 읽는다. 두 수가 주어졌을 때, 상수의 대답을 출력하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">수학</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/2908" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">5622번: 다이얼</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        전화를 걸고 싶은 번호가 있다면, 숫자를 하나를 누른 다음에 금속 핀이 있는 곳 까지 시계방향으로 돌려야 한다. 숫자를 하나 누르면 다이얼이 처음 위치로 돌아가고, 다음 숫자를 누르려면 다이얼을 처음 위치에서 다시 돌려야 한다.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">문자열</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/5622" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
-
-    <div class="problem-card">
-      <div class="problem-platform">백준</div>
-      <div class="problem-title">1316번: 그룹 단어 체커</div>
-      <span class="problem-difficulty difficulty-easy">Easy</span>
-      
-      <div class="problem-description">
-        그룹 단어란 단어에 존재하는 모든 문자에 대해서, 각 문자가 연속해서 나타나는 경우만을 말한다. 그룹 단어의 개수를 출력하는 프로그램을 작성하시오.
-      </div>
-      
-      <div class="problem-tags">
-        <span class="tag">구현</span>
-        <span class="tag">문자열</span>
-      </div>
-      
-      <a href="https://www.acmicpc.net/problem/1316" class="solution-link" target="_blank">📝 문제 보기</a>
-    </div>
+    
   </div>
 </div>
 

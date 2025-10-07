@@ -13,7 +13,7 @@ status:
   icon: 🦕
 
 # Short bio (displayed in user profile at end of posts)
-bio: A developer who has been developing frontend development capabilities while majoring in computer engineering.
+bio: A developer who has been building frontend development skills while majoring in Computer Science.
 
 # Social/Academic Networking
 social:
@@ -38,3 +38,4 @@ social:
 #   icon_pack: ai
 #   link: files/cv.pdf
 ---
+

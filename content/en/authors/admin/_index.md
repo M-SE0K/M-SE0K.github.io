@@ -59,7 +59,6 @@ social:
   - icon: figma
     icon_pack: fab
     link: https://www.figma.com/@m_se0k
-
 # Uncomment below for Github link
 #- icon: github
 #  icon_pack: fab
@@ -74,9 +73,11 @@ social:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 #email: ""
 ---
-
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+**I'm Minseok Kwon, majoring in Computer Science with a focus on frontend development.
+After building a solid foundation in HTML, CSS, and JavaScript, I gained practical experience through React and TypeScript-based projects.
+With a strong understanding of component-based architecture, I have developed with reusability and maintainability in mind.
+I also have experience effectively managing complex data flows using state management libraries such as Redux and Recoil.
+I enjoy quickly learning and applying new technologies, and I aim to become a developer who contributes to team performance and growth.**
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+

@@ -9,15 +9,15 @@ sections:
     content:
       title: Contact
       text: |-
-        <br> I am usually around Engineering Building 7 at Jeonbuk National University. <br>
+        <br> I'm usually found at Jeonbuk National University Engineering Building 7. <br>
       email: seg082911@gmail.com
       phone: +82-8770-4710
       address:
-        street: Engineering Building 7, Jeonbuk National University
-        city: Jeonju
+        street: Jeonbuk National University Engineering Building 7
+        city: Jeonju-si
         region: Jeollabuk-do
         postcode: '54896'
-        country: Republic of Korea
+        country: South Korea
         country_code: KR
       coordinates:
         latitude: '35.84614386613747'
@@ -29,5 +29,5 @@ sections:
     
     design:
       columns: '3'
-
 ---
+

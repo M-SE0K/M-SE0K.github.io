@@ -1,5 +1,13 @@
 ---
 title: Travel
+type: page
+summary: Travel records
+---
+
+Travel main page.
+
+---
+title: Travel
 date: 2025-10-01
 
 type: landing
@@ -7,11 +15,12 @@ type: landing
 sections:
   - block: markdown
     content:
-      title: Travel Journal
+      title: Travel Records
       text: |
-        Brief notes and photos from trips.
+        Briefly organizing travels, photos, and reviews.
     design:
       columns: '1'
 ---
+
 
 

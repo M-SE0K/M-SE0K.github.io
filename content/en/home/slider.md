@@ -7,7 +7,7 @@ content:
   slides:
     - title: M-SE0K Portfolio
       content: |
-        Documenting the journey of growth through projects and challenges.
+        Recording the growth process through projects and challenges.
       align: center
       background:
         color: '#000'
@@ -19,7 +19,7 @@ content:
         fit: cover
     - title: Projects
       content: |
-        Showcasing work across diverse fields including Web, iOS, and Compilers.
+        Introducing work in various areas including web, iOS, and compilers.
       align: center
       background:
         color: '#111'
@@ -31,7 +31,7 @@ content:
         fit: cover
     - title: Hobbies
       content: |
-        Embracing various hobbies to maintain a balanced and energetic life.
+       Maintaining an energetic daily life with various hobbies.
       align: center
       background:
         color: '#000'
@@ -43,6 +43,10 @@ content:
         fit: cover
 
 design:
-  slide_height: 60vh
-  is_fullscreen: false
+  slide_height: 100vh
+  is_fullscreen: true
+  css_class: snap-section
 ---
+
+
+

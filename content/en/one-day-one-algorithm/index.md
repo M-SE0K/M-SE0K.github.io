@@ -1,7 +1,7 @@
 ---
 title: ""
 type: page
-summary: "하루 하나 알고리즘 풀이 기록"
+summary: "Daily algorithm solving records"
 date: 2025-10-07
 ---
 
@@ -209,16 +209,17 @@ date: 2025-10-07
 </style>
 
 <div class="algorithm-container">
+
 <div class="timeline-header">
-  <h2>알고리즘 🏆</h2>
-  <p>매일 하나씩 알고리즘 문제를 풀며 실력을 향상시켜 나가는 기록입니다</p>
-  <p style="font-size: 0.9rem; opacity: 0.9;">백준 ID: <a href="https://www.acmicpc.net/user/seg7577" style="color: white; text-decoration: underline;">seg7577</a> | <a href="https://solved.ac/profile/seg7577" style="color: white; text-decoration: underline;">solved.ac 프로필</a></p>
+  <h2>Algorithms 🏆</h2>
+  <p>Daily records of improving skills by solving one algorithm problem at a time</p>
+  <p style="font-size: 0.9rem; opacity: 0.9;">Baekjoon ID: <a href="https://www.acmicpc.net/user/seg7577" style="color: white; text-decoration: underline;">seg7577</a> | <a href="https://solved.ac/profile/seg7577" style="color: white; text-decoration: underline;">solved.ac Profile</a></p>
 </div>
 
 <div class="stats-grid">
   <div class="stat-card">
     <div class="stat-number">289</div>
-    <div class="stat-label">총 문제 수</div>
+    <div class="stat-label">Total Problems</div>
   </div>
   <div class="stat-card">
     <div class="stat-number">129</div>
@@ -236,14 +237,14 @@ date: 2025-10-07
 
 <div class="month-section">
   <div class="month-header">
-    <h3 class="month-title">📅 현재 레이팅 및 통계</h3>
+    <h3 class="month-title">📅 Current Rating & Statistics</h3>
     <p>Solved.ac Gold 3 | Rating: 1208 | Class 3</p>
   </div>
 
   <div class="month-stats">
     <div class="month-stat">
       <div class="month-stat-number">289</div>
-      <div class="month-stat-label">총 해결</div>
+      <div class="month-stat-label">Total Solved</div>
     </div>
     <div class="month-stat">
       <div class="month-stat-number">129</div>
@@ -263,56 +264,57 @@ date: 2025-10-07
     </div>
     <div class="month-stat">
       <div class="month-stat-number">8</div>
-      <div class="month-stat-label">최장 연속</div>
+      <div class="month-stat-label">Max Streak</div>
     </div>
   </div>
 </div>
 
-## 📊 전체 진행 상황
+## 📊 Overall Progress
 
-### 현재 상태
-- **현재 티어**: Gold 3 
-- **레이팅**: 1208
-- **클래스**: Class 3
-- **전체 순위**: 30,268위
-- **최장 연속 풀이**: 8일
+### Current Status
+- **Current Tier**: Gold 3 
+- **Rating**: 1208
+- **Class**: Class 3
+- **Overall Rank**: 30,268th
+- **Max Streak**: 8 days
 
-### 누적 통계
-- **총 문제 수**: 289문제
-- **Solved.ac 가입일**: 2022년 9월
+### Cumulative Statistics
+- **Total Problems**: 289 problems
+- **Solved.ac Join Date**: September 2022
 
-### 난이도별 통계
-- **Bronze**: 129문제 (44.6%)
-- **Silver**: 127문제 (43.9%)
-- **Gold**: 33문제 (11.4%)
-- **Platinum+**: 0문제 (0.0%)
+### Statistics by Difficulty
+- **Bronze**: 129 problems (44.6%)
+- **Silver**: 127 problems (43.9%)
+- **Gold**: 33 problems (11.4%)
+- **Platinum+**: 0 problems (0.0%)
 
-### 다음 목표
-- **Gold 2 달성하기** (현재: Gold 3)
-- **Gold 문제 50개 돌파하기** (현재: 33개)
-- **Class 4 도전하기** (현재: Class 3)
+### Next Goals
+- **Achieve Gold 2** (Current: Gold 3)
+- **Reach 50 Gold Problems** (Current: 33)
+- **Challenge Class 4** (Current: Class 3)
 
-## 💡 학습 노트
+## 💡 Learning Notes
 
-### 강점 영역
-- **Bronze/Silver 문제**: 전체의 88.5%를 차지하는 주력 난이도
-- **Gold 문제**: 33문제 해결로 고난도 문제 경험 보유
-- **꾸준함**: 최장 8일 연속 풀이 기록
+### Strengths
+- **Bronze/Silver Problems**: Main difficulty range accounting for 88.5% of total
+- **Gold Problems**: Experience with 33 high-difficulty problems
+- **Consistency**: Maximum 8-day consecutive solving streak
 
-### 개선이 필요한 영역
-- **Platinum 이상**: 고난도 문제 경험 쌓기
-- **연속 풀이**: 꾸준한 문제 풀이 습관 유지
-- **Class 상승**: Class 4 에센셜 문제 도전
+### Areas for Improvement
+- **Platinum+**: Gain experience with high-difficulty problems
+- **Consecutive Solving**: Maintain consistent problem-solving habits
+- **Class Advancement**: Challenge Class 4 essential problems
 
-### 추천 학습 방향
-1. **Gold 2 달성을 위한 Gold 3~2 문제 집중 풀이**
-2. **Gold 4~3 난이도 문제로 실력 향상**
-3. **Class 4 에센셜 문제 도전**
-4. **매일 1문제씩 꾸준히 풀이하여 연속 기록 갱신**
+### Recommended Learning Path
+1. **Focus on Gold 3~2 problems to achieve Gold 2**
+2. **Improve skills with Gold 4~3 difficulty problems**
+3. **Challenge Class 4 essential problems**
+4. **Solve 1 problem daily to update streak record**
 
-### 유용한 링크
-- [백준 프로필](https://www.acmicpc.net/user/seg7577)
-- [solved.ac 프로필](https://solved.ac/profile/seg7577)
-- [Class 4 문제집](https://solved.ac/class/4)
+### Useful Links
+- [Baekjoon Profile](https://www.acmicpc.net/user/seg7577)
+- [solved.ac Profile](https://solved.ac/profile/seg7577)
+- [Class 4 Problem Set](https://solved.ac/class/4)
 
 </div>
+

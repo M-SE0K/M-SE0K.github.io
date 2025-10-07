@@ -198,15 +198,15 @@ summary: Daily algorithm problem solving records
 
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-number">0</div>
+    <div class="stat-number">47</div>
     <div class="stat-label">Total Problems</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">0</div>
+    <div class="stat-number">35</div>
     <div class="stat-label">Easy</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">0</div>
+    <div class="stat-number">12</div>
     <div class="stat-label">Medium</div>
   </div>
   <div class="stat-card">

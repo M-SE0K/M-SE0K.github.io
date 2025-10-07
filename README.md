@@ -74,4 +74,4 @@ magick assets/media/contact.png -strip -quality 90 assets/media/contact.webp
 
 ## 라이선스
 
-개인 포트폴리오 용도로 사용됩니다. 테마는 HugoBlox/Wowchemy에 의해 제공됩니다.
+개인 포트폴리오 용도로 사용됩니다. 테마는 HugoBlox/Wowchemy에 의해 제공됩니다.Commit count: 1 at 2025년 10월  7일 화요일 19시 27분 30초 KST

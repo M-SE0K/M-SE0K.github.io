@@ -151,8 +151,7 @@ date: 2025-10-07
   margin: 3rem 0;
   padding: 2rem;
   background: #f8f9fa;
-  border-radius: 15px;
-  border-left: 5px solid #667eea;
+  border-radius: 2rem;
 }
 
 .month-header {

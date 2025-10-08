@@ -320,3 +320,75 @@ ul.network- .big-icon {
   max-width: 100% !important;
 }
 
+// -------------------------------------------------------------------
+// Contest page: dark mode styles
+// -------------------------------------------------------------------
+
+
+.dark .contest-card {
+  background: #7232ba;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.dark .contest-card:hover {
+  transform: scale(1.01);
+}
+
+.dark .card-content {
+  background: #292933;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.dark .card-content:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.dark .contest-title {
+  color: #e0e0e0;
+}
+
+.dark .contest-date {
+  color: #b0b0b0;
+}
+
+.dark .contest-description {
+  color: #c0c0c0;
+}
+
+.dark .tag {
+  background: #2a2a2a;
+  color: #b0b0b0;
+  border: 1px solid #404040;
+}
+
+.dark .achievement-box {
+  background: #252525;
+  border-left: 4px solid #667eea;
+}
+
+.dark .achievement-box strong {
+  color: #8b9cf5;
+}
+
+.dark .section-title {
+  color: #e0e0e0;
+}
+
+.dark .badge-bootcamp,
+.dark .badge-university {
+  color: #ffffff;
+}
+
+.dark .month-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #292933;
+  border-radius: 2rem;
+}
+
+.dark .month-title {
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+}

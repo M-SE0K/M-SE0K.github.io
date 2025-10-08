@@ -1,8 +1,4 @@
 ---
-title: ""
-type: page
-summary: "알고리즘 대회 및 코딩테스트 참가 기록"
-date: 2025-10-07
 ---
 
 <style>
@@ -84,7 +80,6 @@ date: 2025-10-07
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  border-left: 5px solid #667eea;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
 }
@@ -210,6 +205,7 @@ date: 2025-10-07
   line-height: 1.8;
   opacity: 0.95;
 }
+
 </style>
 
 <div class="contest-container">

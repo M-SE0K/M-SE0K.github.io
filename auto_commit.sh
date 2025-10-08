@@ -2,7 +2,7 @@
 
 # --- 설정 부분 ---
 # 1. 총 커밋 횟수를 지정합니다.
-TOTAL_COMMITS=150
+TOTAL_COMMITS=10
 
 # 2. 커밋 메시지를 지정합니다. 뒤에 숫자가 자동으로 붙습니다. (예: "수정 내용 1")
 COMMIT_MESSAGE="update"
@@ -22,7 +22,7 @@ for file in "${FILES_TO_MODIFY[@]}"; do
     fi
 done
 echo "확인 완료. 잠시 후 스크립트를 시작합니다."
-sleep 2
+sleep 10
 
 # 지정된 횟수만큼 반복
 for i in $(seq 1 $TOTAL_COMMITS)

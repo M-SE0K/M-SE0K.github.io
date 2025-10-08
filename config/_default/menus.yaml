@@ -48,15 +48,15 @@ main:
     weight: 33
     
   - name: 여행
-    url: /#travel
     weight: 40
     identifier: travel
   - name: 나고야
-    url: /#travel-nagoya
+    url: /travel/nagoya
     parent: travel
     weight: 41
+    parent: travel
   - name: 홍콩/마카오
-    url: /#travel-hkmc
+    url: /travel/hkmc
     parent: travel
     weight: 42
 

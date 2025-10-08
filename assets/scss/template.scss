@@ -32,6 +32,7 @@ div[id] {
 
 .article-container {
   background-color: #fff;
+  
   border-radius: 15px;
 }
 
@@ -392,3 +393,13 @@ ul.network- .big-icon {
   color: #e0e0e0;
   margin-bottom: 0.5rem;
 }
+
+// -------------------------------------------------------------------
+// Travel pages: full width layout
+// -------------------------------------------------------------------
+.travel-container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+

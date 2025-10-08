@@ -1,35 +1,60 @@
 main:
-  - name: Contact
-    url: /contact/
-    weight: 60
   - name: About
-    url: /about/
+    url: /#intro
     weight: 10
     identifier: about
+  - name: Self Introduction
+    url: /#intro
+    parent: about
+    weight: 11
   - name: Experience
     url: /experience/
     parent: about
-    weight: 11
+    weight: 12
+
   - name: Challenge
     url: /challenge/
     weight: 20
+    identifier: challenge
+  - name: Algorithm
+    url: /one-day-one-algorithm/
+    parent: challenge
+    weight: 21
+  - name: Contest & Coding Test
+    url: /contest
+    parent: challenge
+    weight: 22
+
   - name: Projects
     url: /#type
-    weight: 40
+    weight: 30
     identifier: project
   - name: JBSW-NOW
     url: /#type
     parent: project
-    weight: 41
-  - name: Escargot
+    weight: 31
+  - name: escargot
     url: /#type
     parent: project
-    weight: 42
-  - name: Clean Bot
+    weight: 32
+  - name: cleanBot
     url: /#type
     parent: project
-    weight: 43
+    weight: 33
+    
   - name: Travel
-    url: /travel/
-    weight: 50
+    weight: 40
+    identifier: travel
+  - name: Nagoya
+    url: /travel/nagoya
+    parent: travel
+    weight: 41
+  - name: Hong Kong/Macau
+    url: /travel/hkmc
+    parent: travel
+    weight: 42
+
+  - name: Contact
+    url: /contact/
+    weight: 60
 

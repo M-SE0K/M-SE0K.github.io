@@ -24,9 +24,7 @@ design:
 
 <div id="greeting"></div>
 
-<div style="display: flex; margin: 0; padding: 0; gap: 0;">
-    <img src = "https://img.shields.io/badge/c%2B%2B-%2300599C?style=for-the-badge&logo=cplusplus"/></a><img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"><img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"><img src="https://img.shields.io/badge/express-009922?style=for-the-badge&logo=express&logoColor=white"><img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"><img src="https://img.shields.io/badge/typescript-blue?style=for-the-badge&logo=typescript&logoColor=white"><img src="https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=typescript&logoColor=white">
-</div> 
+<!-- 기술 스택은 별도 섹션으로 이동 --> 
 
 <div id="basic-info"></div>
 

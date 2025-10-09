@@ -61,13 +61,41 @@ design:
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  background: linear-gradient(135deg, rgba(102,126,234,0.95), rgba(118,75,162,0.95));
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .tech-card:hover::before {
   opacity: 1;
+}
+
+.tech-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.tech-card:hover .tech-card-overlay {
+  opacity: 1;
+}
+
+.tech-overlay-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  padding: 0 1rem;
 }
 
 .tech-icon {
@@ -163,17 +191,26 @@ design:
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
   </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">React</div>
+  </div>
 </div>
 
 <div class="tech-card">
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
   </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">TypeScript</div>
+  </div>
 </div>
 
 <div class="tech-card">
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">JavaScript</div>
   </div>
 </div>
 
@@ -186,11 +223,17 @@ design:
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" alt="Node.js">
   </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">Node.js</div>
+  </div>
 </div>
 
 <div class="tech-card">
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+  </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">Express</div>
   </div>
 </div>
 
@@ -198,11 +241,17 @@ design:
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase">
   </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">Firebase</div>
+  </div>
 </div>
 
 <div class="tech-card">
   <div class="tech-icon">
     <img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  </div>
+  <div class="tech-card-overlay">
+    <div class="tech-overlay-text">C++</div>
   </div>
 </div>
 

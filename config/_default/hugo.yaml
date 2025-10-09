@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: M-SE0K # Website name
+title: '권민석 | 전북대 컴퓨터공학부 프론트엔드 개발자' # Website name
 baseURL: 'https://m-se0k.github.io/' # Website URL (GitHub Pages 사용자 페이지)
 
 ############################
@@ -73,5 +73,9 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 minify:
   _merge: deep
+  minifyOutput: true

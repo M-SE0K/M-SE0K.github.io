@@ -22,6 +22,21 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: 전북대학교 컴퓨터공학부에서 프론트엔드 개발을 공부하고 있는 권민석입니다.
 
+# SEO keywords
+keywords:
+  - 프론트엔드 개발자
+  - Frontend Developer
+  - React 개발자
+  - TypeScript
+  - JavaScript
+  - 웹 개발
+  - 전북대학교
+  - 컴퓨터공학부
+  - 권민석
+  - Minseok Kwon
+  - 포트폴리오
+  - 전북대 권민석
+
 #interests:
 #- Artificial Intelligence
 #- Computational Linguistics

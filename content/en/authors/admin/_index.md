@@ -13,7 +13,7 @@ status:
   icon: ☕️
 
 # Organizations/Affiliations
-organizations:
+guorganizations:
 - name: Jeonbuk National University
   url: "https://www.jbnu.ac.kr"
 - name: Department of Computer Science, JBNU
@@ -21,6 +21,19 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio: Minseok Kwon, studying frontend development at Jeonbuk National University, Department of Computer Science.
+
+# SEO keywords
+keywords:
+  - Frontend Developer
+  - React Developer
+  - TypeScript
+  - JavaScript
+  - Web Development
+  - Jeonbuk National University
+  - Computer Engineering
+  - Minseok Kwon
+  - Portfolio
+  - South Korea
 
 #interests:
 #- Artificial Intelligence

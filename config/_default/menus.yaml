@@ -54,9 +54,8 @@ main:
     url: /travel/nagoya
     parent: travel
     weight: 41
-    parent: travel
   - name: 홍콩/마카오
-    url: /travel/hkmc
+    url: /travel/hongkong-macau
     parent: travel
     weight: 42
 

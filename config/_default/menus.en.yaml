@@ -50,7 +50,7 @@ main:
     parent: travel
     weight: 41
   - name: Hong Kong/Macau
-    url: /travel/hkmc
+    url: /travel/hongkong-macau
     parent: travel
     weight: 42
 

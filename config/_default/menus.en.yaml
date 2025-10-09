@@ -11,6 +11,10 @@ main:
     url: /experience/
     parent: about
     weight: 12
+  - name: Tech Stack
+    url: /#tech-stack
+    parent: about
+    weight: 13
 
   - name: Challenge
     url: /challenge/

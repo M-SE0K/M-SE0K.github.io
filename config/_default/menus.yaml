@@ -16,6 +16,10 @@ main:
     url: /experience
     parent: about
     weight: 12
+  - name: 기술스택
+    url: /#tech-stack
+    parent: about
+    weight: 13
 
   - name: 챌린지
     url: /challenge/

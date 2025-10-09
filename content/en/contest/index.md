@@ -1,8 +1,12 @@
 ---
-title: ""
+title: "Contests & Coding Tests"
 type: page
 summary: "Algorithm contest and coding test participation records"
 date: 2025-10-07
+image:
+  caption: "Programming contest participation"
+  focal_point: "center"
+  preview_only: false
 ---
 
 <style>
@@ -11,6 +15,45 @@ date: 2025-10-07
   max-width: 100vw;
   margin: 0;
   padding: 2rem;
+}
+
+/* 대표 이미지 영역 스타일 */
+.featured-image-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.featured-image-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.featured-image-section img:hover {
+  transform: scale(1.02);
+}
+
+.featured-image-caption {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* 다크모드 스타일 */
+.dark .featured-image-section {
+  background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+}
+
+.dark .featured-image-caption {
+  color: #adb5bd;
 }
 
 .contest-header {
@@ -213,6 +256,13 @@ date: 2025-10-07
 </style>
 
 <div class="contest-container">
+
+## 📸 Featured Image
+
+<div class="featured-image-section">
+  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Programming contest image">
+  <div class="featured-image-caption">Participating in various programming contests and coding tests to build my skills</div>
+</div>
 
 <div class="contest-header">
   <h1>🏆 Contests & Coding Tests</h1>

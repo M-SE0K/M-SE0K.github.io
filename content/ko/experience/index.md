@@ -1,7 +1,15 @@
 ---
-title: 
+title: 경력사항
 type: page
-summary: 경력 및 활동 내역을 기록합니다.
+summary: 전북대학교 컴퓨터공학부 권민석의 경력 및 활동 내역을 기록합니다.
+keywords: 
+  - 권민석
+  - 전북대학교
+  - 전북대학교 컴퓨터공학부
+  - JBNU
+  - Minseok Kwon
+  - 프론트엔드 개발자
+  - Frontend Developer
 ---
 
 <style>

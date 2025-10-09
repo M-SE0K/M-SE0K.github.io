@@ -1,7 +1,15 @@
 ---
-title: 
+title: Experience
 type: page
-summary: Records of career and activities.
+summary: Records of career and activities of Minseok Kwon from Jeonbuk National University, Department of Computer Science.
+keywords: 
+  - Minseok Kwon
+  - 권민석
+  - Jeonbuk National University
+  - JBNU
+  - 전북대학교
+  - Department of Computer Science
+  - Frontend Developer
 ---
 
 # 🚀 Career

@@ -13,12 +13,14 @@ status:
   icon: ☕️
 
 # Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+organizations:
+- name: 전북대학교
+  url: "https://www.jbnu.ac.kr"
+- name: 전북대학교 컴퓨터공학부
+  url: "https://csai.jbnu.ac.kr"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 전북대학교 컴퓨터공학부에서 프론트엔드 개발을 공부하고 있는 권민석입니다.
 
 #interests:
 #- Artificial Intelligence

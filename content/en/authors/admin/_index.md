@@ -13,12 +13,14 @@ status:
   icon: ☕️
 
 # Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+organizations:
+- name: Jeonbuk National University
+  url: "https://www.jbnu.ac.kr"
+- name: Department of Computer Science, JBNU
+  url: "https://csai.jbnu.ac.kr"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Minseok Kwon, studying frontend development at Jeonbuk National University, Department of Computer Science.
 
 #interests:
 #- Artificial Intelligence

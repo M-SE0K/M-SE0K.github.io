@@ -14,10 +14,9 @@
 
 .travel-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 2rem;
-
 }
 
 .photo-frame {
@@ -26,14 +25,16 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .photo-frame img {
   width: 100%;
-  height: 100%;
-  min-height: 200px;
-  max-height: 450px;
-  object-fit: cover;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
   border-radius: 4px;
   display: block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -47,11 +48,13 @@
 
 .photo-caption {
   margin-top: 0.75rem;
-
   text-align: left;
   font-size: 0.9rem;
   color: white;
   font-weight: 500;
+  flex-shrink: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .dark .photo-frame {
@@ -61,6 +64,43 @@
 
 .dark .photo-caption {
   color:rgb(15, 14, 14);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .travel-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .article-container {
+    margin: 1rem;
+  }
+  
+  .photo-frame {
+    padding: 0.75rem;
+  }
+  
+  .photo-frame img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .article-container {
+    margin: 0.5rem;
+  }
+  
+  .photo-frame img {
+    max-height: 200px;
+  }
 }
 </style>
 

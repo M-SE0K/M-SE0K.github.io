@@ -118,12 +118,43 @@ date: 2025-02-10
 /* 반응형 디자인 */
 @media (max-width: 768px) {
   .card-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
   }
   
   .travel-container {
     padding: 1rem;
+  }
+  
+  .article-container {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .travel-container {
+    padding: 0.5rem;
+  }
+  
+  .article-container {
+    margin: 0.5rem;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-description {
+    font-size: 0.85rem;
   }
 }
 </style>

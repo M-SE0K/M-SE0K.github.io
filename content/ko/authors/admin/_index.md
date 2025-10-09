@@ -82,3 +82,5 @@ HTML, CSS, JavaScript의 기본기를 탄탄히 다진 후, React와 TypeScript 
 새로운 기술을 빠르게 습득하고 적용하는 것을 즐기며, 팀의 성과와 성장에 기여할 수 있는 개발자가 되겠습니다.**
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+
+---

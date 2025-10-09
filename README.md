@@ -1,126 +1,156 @@
-# M-SE0K Portfolio (Hugo + HugoBlox/Wowchemy)
+# 👋 안녕하세요, 권민석입니다!
 
-안녕하세요, 권민석(M-SE0K)입니다. 문제를 구조적으로 분석하고 꾸준히 개선하는 것을 즐깁니다. 사용자 경험을 해치지 않는 범위에서 성능과 유지보수를 우선시하며, 기록과 자동화를 습관화하고 있습니다.
+[![Portfolio](https://img.shields.io/badge/Portfolio-M--SE0K-blue?style=for-the-badge&logo=github)](https://m-se0k.github.io/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577)
 
-개인 포트폴리오 사이트 저장소입니다. HugoBlox 기반으로 다국어(ko/en), 커스텀 메뉴, 테마 컬러, SCSS 오버라이드 등을 사용합니다.
+## 🎓 About Me
 
-![Preview](preview.png)
+전북대학교 컴퓨터공학부에서 **프론트엔드 개발**을 공부하고 있는 학생 개발자입니다.  
+사용자에게 즐거운 경험을 선사하는 웹을 만드는 것을 목표로 하고 있습니다.
 
-## 빠른 시작
+- 🏫 **소속**: 전북대학교 컴퓨터공학부
+- 💻 **관심 분야**: Frontend Development, Web Development, UI/UX
+- 📧 **Email**: [Contact Me](https://m-se0k.github.io/contact/)
+- 📱 **Phone**: +82-8770-4710
 
-개발 서버 실행:
+---
 
-```bash
-tools/hugo/bin/hugo server -D
+## 🛠️ Tech Stack
+
+### Frontend
+![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Backend & Tools
+![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white)
+![Express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white)
+![C++](https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+
+### State Management
+![Redux](https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Recoil](https://img.shields.io/badge/recoil-3578E5?style=for-the-badge&logo=recoil&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+### 🌟 [JBSW-NOW](https://github.com/M-SE0K/JBSW-NOW)
+전북대, 군산대, 원광대 및 지역 SW 사업단의 이벤트를 AI로 통합 수집·분류·추천하는 플랫폼
+- **Tech**: React, TypeScript, Firebase
+- **Features**: AI 기반 이벤트 추천, 실시간 알림, 통합 검색
+
+### 🐌 [Escargot](https://github.com/M-SE0K/escargot)
+효율적인 프로젝트 관리를 위한 협업 도구
+- **Tech**: React, Node.js, Express
+- **Features**: 실시간 협업, 태스크 관리, 팀 커뮤니케이션
+
+### 🤖 [CleanBot](https://github.com/M-SE0K/cleanBot)
+자율주행 청소 로봇 시뮬레이션
+- **Tech**: C++, Algorithm
+- **Features**: 경로 최적화, 장애물 회피
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=M-SE0K&show_icons=true&theme=radical)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=M-SE0K&layout=compact&theme=radical)
+
+</div>
+
+---
+
+## 🏆 Algorithm & Problem Solving
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577)
+
+- **Tier**: Gold 3
+- **Total Solved**: 289 problems
+- **Rating**: 1208
+- **Class**: Class 3
+
+**Problem Distribution**:
+- 🥉 Bronze: 129 problems (44.6%)
+- 🥈 Silver: 127 problems (43.9%)
+- 🥇 Gold: 33 problems (11.4%)
+
+---
+
+## 💼 Experience
+
+### 🎓 Education & Training
+- **Samsung S/W Winter Academy** (2025.01 ~ 2025.02)
+  - Algorithm & CS intensive curriculum
+  - Weekly mock tests and code reviews
+  
+- **NAVER Boost Camp Web Fullstack** (2024.07 ~ 2024.12)
+  - React & TypeScript based project development
+  - Agile methodology and team collaboration
+
+### 🏢 Competition & Coding Tests
+- **SCPC** (Samsung Collegiate Programming Cup) - Preliminary
+- **UCPC** (Universal Collegiate Programming Contest) - Preliminary
+- **JBNU Programming Contest**
+- **Hyundai Mobis Coding Test**
+- **NAVER Boost Camp Entry Coding Test** - Passed ✅
+
+---
+
+## 🎯 Goals
+
+- 🌱 Currently learning: Advanced React Patterns, Performance Optimization
+- 🔭 Working on: Personal portfolio website improvements
+- 🎓 Next goal: **Gold 2** on Solved.ac
+- 💡 Interested in: Modern Frontend Architecture, State Management, Web Performance
+
+---
+
+## 📫 Connect With Me
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://m-se0k.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/M-SE0K)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/m._.se0k)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/ucwpvU6zb9M?si=XNaGgVfaQAiOiKPN)
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/@m_se0k)
+
+</div>
+
+---
+
+## 🌟 Highlights
+
+```javascript
+const minseokKwon = {
+  location: "Jeonbuk, South Korea",
+  university: "Jeonbuk National University",
+  major: "Computer Science & Engineering",
+  role: "Frontend Developer",
+  skills: {
+    frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
+    backend: ["Node.js", "Express", "Firebase"],
+    stateManagement: ["Redux", "Recoil"],
+    tools: ["Git", "GitHub", "Figma", "VS Code"]
+  },
+  currentFocus: "Building user-friendly web experiences",
+  funFact: "I love solving algorithm problems every day! 🧩"
+};
 ```
 
-프로덕션 빌드(정적 파일 생성 → `public/`):
+---
 
-```bash
-tools/hugo/bin/hugo --minify
-```
+<div align="center">
 
-## 주요 경로(커스터마이징)
+### 💭 "새로운 기술을 배우고 적용하는 것을 즐기며, 꾸준한 성장을 통해 팀에 기여하는 개발자가 되겠습니다."
 
-- 메뉴 구성: `config/_default/menus.yaml`
-  - 상위/하위 메뉴 추가, `identifier`/`parent`로 드롭다운 구성
+![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FM-SE0K&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)
 
-- 다국어/사이트 타이틀: `config/_default/languages.yaml`
-  - `ko.title`, `en.title` 값 변경으로 헤더 타이틀 텍스트 수정
-
-- 헤더 옵션: `config/_default/params.yaml`
-  - `header.navbar.show_logo: true` 로고 표시, 검색/라이트/다크 버튼 등 토글
-
-- 테마 색상: `data/themes/custom.toml`
-  - `[light].primary`, `menu_text_active`, `[dark].primary` 등 포인트 컬러 설정
-
-- SCSS 오버라이드: `assets/scss/template.scss`
-  - 네비/드롭다운 호버, 글꼴 색, 로고 크기 등 스타일 커스터마이즈
-
-- 로고/아이콘 이미지: `assets/media/icon.png`
-  - 정사각 PNG(sRGB, 256~512px)로 교체하면 헤더 아이콘/파비콘이 갱신됩니다
-
-- 컨택트 배경(ko/en): `content/ko/contact/index.md`, `content/en/contact/index.md`
-  - 섹션의 `design.background.image.filename` 에 배경 이미지 지정 (예: `contact.png`)
-  - 투명도 `image_darken`, 텍스트 가독성 `text_color_light` 조절
-
-## 이미지 사용 주의(빌드 오류 예방)
-
-Hugo 이미지 파이프라인에서 "unknown format" 오류가 발생하면 아래처럼 재인코딩하세요.
-
-PNG 재인코딩(권장):
-
-```bash
-magick assets/media/contact.png -strip -colorspace sRGB -define png:color-type=2 -depth 8 assets/media/contact.png
-```
-
-JPG 재인코딩(슬라이더 이미지 등):
-
-```bash
-magick assets/media/Slider/img1.jpg -strip -interlace none -colorspace sRGB -quality 90 assets/media/Slider/img1.jpg
-```
-
-WebP로 변환하여 용량 절감:
-
-```bash
-magick assets/media/contact.png -strip -quality 90 assets/media/contact.webp
-# 그런 다음 content의 filename을 contact.webp 로 변경
-```
-
-## 배포
-
-- Netlify 사용 시 `netlify.toml` 기준으로 자동 배포됩니다.
-- 수동 배포는 `public/` 폴더를 정적 호스팅에 업로드하세요.
-
-## 라이선스
-
-개인 포트폴리오 용도로 사용됩니다. 테마는 HugoBlox/Wowchemy에 의해 제공됩니다.Commit count: 1 at 2025년 10월  7일 화요일 19시 27분 30초 KST
-Commit count: 2 at 2025년 10월  7일 화요일 19시 27분 32초 KST
-Commit count: 3 at 2025년 10월  7일 화요일 19시 27분 34초 KST
-Commit count: 4 at 2025년 10월  7일 화요일 19시 27분 37초 KST
-Commit count: 5 at 2025년 10월  7일 화요일 19시 27분 39초 KST
-Commit count: 6 at 2025년 10월  7일 화요일 19시 27분 41초 KST
-Commit count: 7 at 2025년 10월  7일 화요일 19시 27분 44초 KST
-Commit count: 8 at 2025년 10월  7일 화요일 19시 27분 46초 KST
-Commit count: 9 at 2025년 10월  7일 화요일 19시 27분 48초 KST
-Commit count: 10 at 2025년 10월  7일 화요일 19시 27분 50초 KST
-Commit count: 11 at 2025년 10월  7일 화요일 19시 27분 53초 KST
-Commit count: 12 at 2025년 10월  7일 화요일 19시 27분 55초 KST
-Commit count: 13 at 2025년 10월  7일 화요일 19시 27분 57초 KST
-Commit count: 14 at 2025년 10월  7일 화요일 19시 28분 00초 KST
-Commit count: 15 at 2025년 10월  7일 화요일 19시 28분 02초 KST
-Commit count: 16 at 2025년 10월  7일 화요일 19시 28분 04초 KST
-Commit count: 17 at 2025년 10월  7일 화요일 19시 28분 07초 KST
-Commit count: 18 at 2025년 10월  7일 화요일 19시 28분 09초 KST
-Commit count: 19 at 2025년 10월  7일 화요일 19시 28분 12초 KST
-Commit count: 20 at 2025년 10월  7일 화요일 19시 28분 14초 KST
-Commit count: 21 at 2025년 10월  7일 화요일 19시 28분 16초 KST
-Commit count: 22 at 2025년 10월  7일 화요일 19시 28분 19초 KST
-Commit count: 23 at 2025년 10월  7일 화요일 19시 28분 21초 KST
-Commit count: 24 at 2025년 10월  7일 화요일 19시 28분 23초 KST
-Commit count: 25 at 2025년 10월  7일 화요일 19시 28분 25초 KST
-Commit count: 26 at 2025년 10월  7일 화요일 19시 28분 28초 KST
-Commit count: 27 at 2025년 10월  7일 화요일 19시 28분 30초 KST
-Commit count: 28 at 2025년 10월  7일 화요일 19시 28분 32초 KST
-Commit count: 29 at 2025년 10월  7일 화요일 19시 28분 35초 KST
-Commit count: 30 at 2025년 10월  7일 화요일 19시 28분 37초 KST
-Commit count: 31 at 2025년 10월  7일 화요일 19시 28분 39초 KST
-Commit count: 32 at 2025년 10월  7일 화요일 19시 28분 42초 KST
-Commit count: 33 at 2025년 10월  7일 화요일 19시 28분 44초 KST
-Commit count: 1 at 2025년 10월  7일 화요일 19시 29분 27초 KST
-Commit count: 2 at 2025년 10월  7일 화요일 19시 29분 29초 KST
-Commit count: 3 at 2025년 10월  7일 화요일 19시 29분 32초 KST
-Commit count: 4 at 2025년 10월  7일 화요일 19시 29분 34초 KST
-Commit count: 5 at 2025년 10월  7일 화요일 19시 29분 36초 KST
-Commit count: 6 at 2025년 10월  7일 화요일 19시 29분 39초 KST
-Commit count: 7 at 2025년 10월  7일 화요일 19시 29분 41초 KST
-Commit count: 1 at 2025년 10월  9일 목요일 02시 48분 59초 KST
-Commit count: 2 at 2025년 10월  9일 목요일 02시 50분 01초 KST
-Commit count: 3 at 2025년 10월  9일 목요일 02시 51분 02초 KST
-Commit count: 4 at 2025년 10월  9일 목요일 02시 52분 04초 KST
-Commit count: 5 at 2025년 10월  9일 목요일 02시 53분 05초 KST
-Commit count: 6 at 2025년 10월  9일 목요일 02시 54분 06초 KST
-Commit count: 7 at 2025년 10월  9일 목요일 02시 55분 08초 KST
-Commit count: 8 at 2025년 10월  9일 목요일 02시 56분 09초 KST
-Commit count: 9 at 2025년 10월  9일 목요일 02시 57분 10초 KST
-Commit count: 10 at 2025년 10월  9일 목요일 02시 58분 25초 KST
+</div>

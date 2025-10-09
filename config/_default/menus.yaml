@@ -13,7 +13,7 @@ main:
     parent: about
     weight: 11
   - name: 경력사항
-    url: /experience/
+    url: /experience
     parent: about
     weight: 12
 

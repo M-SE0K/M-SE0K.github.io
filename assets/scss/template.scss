@@ -36,6 +36,11 @@ div[id] {
   border-radius: 15px;
 }
 
+/* article-container pt-3 클래스 숨기기 */
+.article-container.pt-3 {
+  display: none !important;
+}
+
 .dark .article-container {
   background-color: rgb(31, 39, 51);
 }
@@ -202,6 +207,32 @@ ul.network- .big-icon {
   max-width: 150px;
   max-height: 150px;
   }
+
+/* 아바타 섹션 높이를 콘텐츠에 맞게 자동 조정하여 겹침 방지 */
+.home-section.wg-about-avatar {
+  min-height: auto !important;
+  height: auto !important;
+  padding: 2rem 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 아바타 섹션 내부 컨테이너 */
+.wg-about-avatar .container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1rem !important;
+}
+
+/* 반응형 높이 조정 */
+@media (max-width: 768px) {
+  .home-section.wg-about-avatar {
+    padding: 1rem 0 !important;
+  }
+  
+  .wg-about-avatar .container {
+    padding: 1rem 0.5rem !important;
+  }
+}
 
 // -------------------------------------------------------------------
 // Menu & dropdown hover styles (match theme colors in data/themes/custom.toml)
@@ -520,3 +551,11 @@ ul.network- .big-icon {
   box-shadow: 0 0 0 3px #667eea;
 }
 
+.avatar{
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;        // 추가
+  object-position: center;  // 추가
+}

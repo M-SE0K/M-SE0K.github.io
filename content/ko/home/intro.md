@@ -10,7 +10,7 @@ weight: 10
 
 author: admin
 design:
-  css_class: snap-section 
+  css_class: no-snap 
 #design:
 #  background:
 #    color: '#090a0b'

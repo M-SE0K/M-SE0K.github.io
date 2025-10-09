@@ -1,6 +1,10 @@
 // Starter Blog Template
 // https://hugoblox.com/hugo-themes/
 
+// Import custom components and layouts
+@import 'custom-cards';
+@import 'custom-layouts';
+
 body {
   background-color: rgb(247, 250, 252);
 }

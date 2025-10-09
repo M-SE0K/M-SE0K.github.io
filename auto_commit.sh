@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# ./auto_commit.sh
 # --- 설정 부분 ---
 # 1. 총 커밋 횟수를 지정합니다.
 TOTAL_COMMITS=10

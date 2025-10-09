@@ -9,6 +9,12 @@ image:
   preview_only: false
 ---
 
+<!-- 
+  Styles:
+  - Common card styles imported from assets/scss/custom-cards.scss
+  - Page-specific styles defined below
+-->
+
 <style>
 .contest-container {
   width: 100%;

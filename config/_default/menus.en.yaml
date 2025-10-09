@@ -21,11 +21,11 @@ main:
     weight: 20
     identifier: challenge
   - name: Algorithm
-    url: /one-day-one-algorithm/
+    url: /challenge/algorithm/
     parent: challenge
     weight: 21
   - name: Contest & Coding Test
-    url: /contest
+    url: /challenge/contest/
     parent: challenge
     weight: 22
 

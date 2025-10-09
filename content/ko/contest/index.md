@@ -266,7 +266,7 @@ image:
 
 <div class="contest-header">
   <h1>🏆 대회 & 코딩테스트</h1>
-  <p>알고리즘 실력 향상과 도전을 위해 참여한 대회 및 코딩테스트 경험</p>
+  <p style="text-align: justify; line-height: 1.8;">알고리즘 실력 향상과 도전을 위해 참여한 대회 및 코딩테스트 경험</p>
 </div>
 
 <div class="stats-overview">

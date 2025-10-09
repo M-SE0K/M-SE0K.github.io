@@ -44,7 +44,9 @@ design:
 </div>
 
 <div id="self-introduction"></div>
+<p style="text-align: justify; line-height: 1.8;">
 I'm Minseok Kwon, a Computer Science student aspiring to become a frontend developer who creates web experiences that bring joy to users. Based on a solid foundation in HTML, CSS, and JavaScript, I've gained project experience using React and TypeScript. I have a strong understanding of component-based development and am comfortable efficiently managing complex data using state management libraries (Recoil, Redux, etc.). I'm proactive in learning and applying new technologies, and I aim to become a developer who contributes to the team through continuous growth.
+</p>
 
 <div style="margin-top: 2rem; text-align: center;">
   <a href="/uploads/resume.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">

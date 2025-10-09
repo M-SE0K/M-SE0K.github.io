@@ -261,7 +261,7 @@ image:
 
 <div class="timeline-header">
   <h2>Algorithms 🏆</h2>
-  <p>Daily records of improving skills by solving one algorithm problem at a time</p>
+  <p style="text-align: justify; line-height: 1.8;">Daily records of improving skills by solving one algorithm problem at a time</p>
   <p style="font-size: 0.9rem; opacity: 0.9;">Baekjoon ID: <a href="https://www.acmicpc.net/user/seg7577" style="color: white; text-decoration: underline;">seg7577</a> | <a href="https://solved.ac/profile/seg7577" style="color: white; text-decoration: underline;">solved.ac Profile</a></p>
 </div>
 

@@ -48,7 +48,7 @@
 
 .photo-caption {
   margin-top: 0.75rem;
-  text-align: left;
+  text-align: justify;
   font-size: 0.9rem;
   color: white;
   font-weight: 500;

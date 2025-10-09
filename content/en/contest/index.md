@@ -266,7 +266,7 @@ image:
 
 <div class="contest-header">
   <h1>🏆 Contests & Coding Tests</h1>
-  <p>Contest and coding test experiences for algorithm skill improvement and challenges</p>
+  <p style="text-align: justify; line-height: 1.8;">Contest and coding test experiences for algorithm skill improvement and challenges</p>
 </div>
 
 <div class="stats-overview">

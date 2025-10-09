@@ -14,7 +14,9 @@ keywords:
 
 # 🚀 Career
 
+<p style="text-align: justify; line-height: 1.8;">
 Introducing my career as a frontend developer and various activities.
+</p>
 
 <div class="timeline">
 
@@ -24,7 +26,9 @@ Introducing my career as a frontend developer and various activities.
 <div class="company">Samsung</div>
 <div class="period">📅 2025.01 ~ 2025.02</div>
 
+<p style="text-align: justify; line-height: 1.8;">
 Participated in algorithm/CS intensive curriculum-based practice
+</p>
 
 **Main Activities**:
 <ul>

@@ -261,7 +261,7 @@ image:
 
 <div class="timeline-header">
   <h2>알고리즘 🏆</h2>
-  <p>매일 하나씩 알고리즘 문제를 풀며 실력을 향상시켜 나가는 기록입니다</p>
+  <p style="text-align: justify; line-height: 1.8;">매일 하나씩 알고리즘 문제를 풀며 실력을 향상시켜 나가는 기록입니다</p>
   <p style="font-size: 0.9rem; opacity: 0.9;">백준 ID: <a href="https://www.acmicpc.net/user/seg7577" style="color: white; text-decoration: underline;">seg7577</a> | <a href="https://solved.ac/profile/seg7577" style="color: white; text-decoration: underline;">solved.ac 프로필</a></p>
 </div>
 

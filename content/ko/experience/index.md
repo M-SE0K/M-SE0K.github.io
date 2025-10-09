@@ -16,7 +16,9 @@ keywords:
 
 # 🚀 경력사항
 
+<p style="text-align: justify; line-height: 1.8;">
 프론트엔드 개발자로서의 경력과 다양한 활동 내역을 소개합니다.
+</p>
 
 <div class="timeline">
 
@@ -26,7 +28,9 @@ keywords:
 <div class="company">Samsung</div>
 <div class="period">📅 2025.01 ~ 2025.02</div>
 
+<p style="text-align: justify; line-height: 1.8;">
 알고리즘/CS 집중 커리큘럼 기반 실습 참여
+</p>
 
 **주요 활동**:
 <ul>

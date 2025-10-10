@@ -33,10 +33,8 @@ design:
 **소속/전공**: 전북대학교 컴퓨터공학부  
 **전화번호**: +82-8770-4710
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577/)
-
 <div id="self-introduction"></div>
-<p style="text-align: justify; line-height: 1.8;">
+<p class="text-justify">
 사용자에게 즐거운 경험을 선사하는 웹을 만드는 프론트엔드 개발자를 꿈꾸는 컴퓨터공학부 권민석입니다. HTML, CSS, JavaScript의 탄탄한 기본기를 바탕으로 React와 TypeScript를 활용한 프로젝트 경험을 쌓아왔습니다. 특히 컴포넌트 기반 개발 방식에 대한 높은 이해도를 가지고 있으며, 상태 관리 라이브러리(Recoil, Redux 등)를 사용해 복잡한 데이터를 효율적으로 관리하는 데 익숙합니다. 새로운 기술을 배우고 적용하는 데 적극적이며, 꾸준한 성장을 통해 팀에 기여하는 개발자가 되겠습니다.
 </p>
 

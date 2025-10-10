@@ -28,10 +28,19 @@ design:
 
 <div id="basic-info"></div>
 
-👋 **안녕하세요** 👋
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; margin: 2rem 0;">
+  <div style="flex: 1; min-width: 300px;">
+    <p style="font-size: 1.5rem; margin-bottom: 1rem;">👋 <strong>안녕하세요👋</strong></p>
+    <p style="margin-bottom: 0.5rem;"><strong>소속/전공: 전북대학교 컴퓨터공학부</strong></p>
+    <p style="margin-bottom: 0.5rem;"><strong>전화번호: +82-8770-4710</strong></p>
+  </div>
+  <div style="flex: 0 0 auto;">
+    <a href="https://solved.ac/seg7577/" target="_blank">
+      <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577" alt="Solved.ac Profile" />
+    </a>
+  </div>
+</div>
 
-**소속/전공**: 전북대학교 컴퓨터공학부  
-**전화번호**: +82-8770-4710
 
 <div id="self-introduction"></div>
 <p class="text-justify">

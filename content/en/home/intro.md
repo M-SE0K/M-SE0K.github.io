@@ -36,12 +36,11 @@ design:
 **Affiliation/Major**: Jeonbuk National University, Department of Computer Science  
 **Phone**: +82-8770-4710
 
-<div id="self-introduction"></div>
-<p class="text-justify">
-I'm Minseok Kwon, a Computer Science student aspiring to become a frontend developer who creates web experiences that bring joy to users. Based on a solid foundation in HTML, CSS, and JavaScript, I've gained project experience using React and TypeScript. I have a strong understanding of component-based development and am comfortable efficiently managing complex data using state management libraries (Recoil, Redux, etc.). I'm proactive in learning and applying new technologies, and I aim to become a developer who contributes to the team through continuous growth.
-</p>
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577/)
 
-{{< icon name="download" pack="fas" >}} [Download Resume (PDF)](/uploads/resume.pdf)
+I'm Minseok Kwon, a Computer Science student aspiring to become a frontend developer who creates web experiences that bring joy to users. Based on a solid foundation in HTML, CSS, and JavaScript, I've gained project experience using React and TypeScript. I have a strong understanding of component-based development and am comfortable efficiently managing complex data using state management libraries (Recoil, Redux, etc.). I'm proactive in learning and applying new technologies, and I aim to become a developer who contributes to the team through continuous growth.
+
+{{< icon name="download" pack="fas" >}} [Download Resume](/uploads/resume.pdf)
 
 
 

@@ -113,5 +113,3 @@ extensions:
 # Default Open Graph/Twitter preview image (used by Hugo/Wowchemy)
 images:
   - '/media/icon.png'
-
-# Last modified: 2025-10-21 22:12

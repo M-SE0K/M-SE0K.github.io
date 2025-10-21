@@ -1,0 +1,12 @@
+# IDEs
+.idea/
+
+# Hugo
+resources/
+public/
+assets/jsconfig.json
+tools/hugo/bin/hugo
+tools/hugo/bin/
+
+
+*.sh

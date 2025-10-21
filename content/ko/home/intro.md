@@ -51,5 +51,3 @@ design:
 
 
 
-
-> Note: Document reviewed on 2025-10-21

@@ -1,0 +1,19 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://docs.hugoblox.com/reference/language/
+
+# Default language
+en:
+  languageCode: en-us
+  contentDir: content/en
+  title: M-SE0K
+  params:
+    description: English site description
+
+# Uncomment the lines below to configure your website in a second language.
+ko:
+  languageCode: ko
+  contentDir: content/ko
+  title: M-SE0K
+  params:
+    description: 한국어 사이트 설명

@@ -1,0 +1,64 @@
+main:
+  - name: About
+    url: /#intro
+    weight: 10
+    identifier: about
+  - name: Self Introduction
+    url: /#intro
+    parent: about
+    weight: 11
+  - name: Experience
+    url: /experience/
+    parent: about
+    weight: 12
+  - name: Tech Stack
+    url: /#tech-stack
+    parent: about
+    weight: 13
+
+  - name: Challenge
+    url: /challenge/
+    weight: 20
+    identifier: challenge
+  - name: Algorithm
+    url: /challenge/algorithm/
+    parent: challenge
+    weight: 21
+  - name: Contest & Coding Test
+    url: /challenge/contest/
+    parent: challenge
+    weight: 22
+
+  - name: Projects
+    url: /#type
+    weight: 30
+    identifier: project
+  - name: JBSW-NOW
+    url: /#type
+    parent: project
+    weight: 31
+  - name: escargot
+    url: /#type
+    parent: project
+    weight: 32
+  - name: cleanBot
+    url: /#type
+    parent: project
+    weight: 33
+    
+  - name: Travel
+    weight: 40
+    identifier: travel
+  - name: Nagoya
+    url: /travel/nagoya
+    parent: travel
+    weight: 41
+  - name: Hong Kong/Macau
+    url: /travel/hongkong-macau
+    parent: travel
+    weight: 42
+
+  - name: Contact
+    url: /contact/
+    weight: 60
+

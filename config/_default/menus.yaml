@@ -1,0 +1,68 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+  #     desired widget in your `content/home/` folder.
+  #   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: 소개
+    url: /#intro
+    weight: 10
+    identifier: about
+  - name: 자기소개
+    url: /#intro
+    parent: about
+    weight: 11
+  - name: 경력사항
+    url: /experience
+    parent: about
+    weight: 12
+  - name: 기술스택
+    url: /#tech-stack
+    parent: about
+    weight: 13
+
+  - name: 챌린지
+    url: /challenge/
+    weight: 20
+    identifier: challenge
+  - name: 알고리즘
+    url: /challenge/algorithm/
+    parent: challenge
+    weight: 21
+  - name: 대회 및 코테
+    url: /challenge/contest/
+    parent: challenge
+    weight: 22
+
+  - name: 프로젝트
+    url: /#type
+    weight: 30
+    identifier: project
+  - name: JBSW-NOW
+    url: /#type
+    parent: project
+    weight: 31
+  - name: escargot
+    url: /#type
+    parent: project
+    weight: 32
+  - name: cleanBot
+    url: /#type
+    parent: project
+    weight: 33
+    
+  - name: 여행
+    weight: 40
+    identifier: travel
+  - name: 나고야
+    url: /travel/nagoya
+    parent: travel
+    weight: 41
+  - name: 홍콩/마카오
+    url: /travel/hongkong-macau
+    parent: travel
+    weight: 42
+
+  - name: 연락처
+    url: /contact/
+    weight: 60

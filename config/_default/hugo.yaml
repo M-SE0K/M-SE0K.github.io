@@ -1,0 +1,82 @@
+# Configuration of Hugo
+# Guide: https://docs.hugoblox.com/tutorial/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+title: '권민석 | 전북대 컴퓨터공학부 프론트엔드 개발자' # Website name
+baseURL: 'https://m-se0k.github.io/' # Website URL (GitHub Pages 사용자 페이지)
+googleAnalytics: '' # Google Analytics ID (비워두면 비활성화)
+
+############################
+## PAGE OPTIONS
+############################
+
+cascade:
+  # Blog post options
+  - _target:
+      path: /post/**
+    editable: true
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+
+############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: ko
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: true
+removePathAccents: true
+
+############################
+## ADVANCED
+############################
+
+enableGitInfo: false
+summaryLength: 30
+pagination:
+  pagerSize: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+permalinks:
+  authors: '/author/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+disableAliases: true
+outputs:
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  section: [HTML, RSS]
+imaging:
+  resampleFilter: lanczos
+  quality: 75
+  anchor: smart
+timeout: 600000
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+markup:
+  _merge: deep
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 70
+security:
+  _merge: deep
+sitemap:
+  _merge: deep
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+minify:
+  _merge: deep
+  minifyOutput: true

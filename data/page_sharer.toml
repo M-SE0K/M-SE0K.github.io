@@ -1,0 +1,27 @@
+# Page Sharer
+# Custom social buttons for footer
+
+[[buttons]]
+  id = "github"
+  url = "https://github.com/M-SE0K"
+  title = "GitHub"
+  icon_pack = "fab"
+  icon = "github"
+  enable = true
+
+[[buttons]]
+  id = "instagram"
+  url = "https://www.instagram.com/m._.se0k"
+  title = "Instagram"
+  icon_pack = "fab"
+  icon = "instagram"
+  enable = true
+
+[[buttons]]
+  id = "home"
+  url = "https://m-se0k.github.io/"
+  title = "Main"
+  icon_pack = "fas"
+  icon = "house"
+  enable = true
+

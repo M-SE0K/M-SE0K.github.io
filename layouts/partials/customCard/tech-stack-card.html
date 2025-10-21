@@ -1,0 +1,175 @@
+<!-- 
+  Tech Stack Card Component
+  
+  Usage:
+    Include this in your markdown files with custom tech stack data
+  
+  Features:
+    - 3×n grid layout
+    - Hover text overlay
+    - Gradient background
+    - Responsive design
+-->
+
+<style>
+.tech-stack-container {
+  padding: 2rem 0;
+}
+
+.tech-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 0rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(102,126,234,0.95), rgba(118,75,162,0.95));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-card:hover::before {
+  opacity: 1;
+}
+
+.tech-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.tech-card:hover .tech-card-overlay {
+  opacity: 1;
+}
+
+.tech-overlay-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  padding: 0 1rem;
+}
+
+.tech-icon {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.tech-card:hover .tech-icon img {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tech-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+/* 다크모드 스타일 */
+.dark .tech-card {
+  background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 992px) {
+  .tech-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+  }
+  
+  .tech-card {
+    padding: 0.5rem;
+  }
+  
+  .tech-icon {
+    font-size: 2rem;
+  }
+  
+  .tech-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+  
+  .tech-card {
+    padding: 0.5rem;
+  }
+}
+</style>
+

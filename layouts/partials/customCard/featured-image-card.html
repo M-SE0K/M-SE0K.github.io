@@ -1,0 +1,84 @@
+<!-- 
+  Featured Image Card Component
+  
+  Usage:
+    Include this in pages that need featured image display
+  
+  Features:
+    - Centered image display
+    - Gradient background
+    - Caption support
+    - Hover zoom effect
+    - Dark mode support
+-->
+
+<style>
+/* 대표 이미지 영역 스타일 */
+.featured-image-section {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.featured-image-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.featured-image-section img:hover {
+  transform: scale(1.02);
+}
+
+.featured-image-caption {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* 다크모드 스타일 */
+.dark .featured-image-section {
+  background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+}
+
+.dark .featured-image-caption {
+  color: #adb5bd;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .featured-image-section {
+    padding: 1.5rem;
+  }
+  
+  .featured-image-section img {
+    max-height: 300px;
+  }
+  
+  .featured-image-caption {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-image-section {
+    padding: 1rem;
+  }
+  
+  .featured-image-section img {
+    max-height: 250px;
+  }
+  
+  .featured-image-caption {
+    font-size: 0.9rem;
+  }
+}
+</style>
+

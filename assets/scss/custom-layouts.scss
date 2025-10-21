@@ -1,0 +1,158 @@
+/*
+ * Custom Layout Utilities
+ * Flexbox 및 Grid 레이아웃을 위한 재사용 가능한 클래스들
+ */
+
+/* ========================================
+   Flexbox Utilities
+   ======================================== */
+
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+/* ========================================
+   Info Card Layout (Intro 페이지용)
+   ======================================== */
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.info-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-greeting {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  margin-bottom: 0.5rem;
+}
+
+.info-badge {
+  flex: 0 0 auto;
+}
+
+/* ========================================
+   Button Styles
+   ======================================== */
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ========================================
+   Text Utilities
+   ======================================== */
+
+.text-justify {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+  .flex-row,
+  .info-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .flex-1,
+  .info-content {
+    min-width: 100%;
+  }
+  
+  .info-greeting {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-container,
+  .flex-row {
+    gap: 0.5rem;
+  }
+}
+

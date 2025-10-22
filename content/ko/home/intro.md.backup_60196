@@ -51,6 +51,3 @@ design:
 
 
 
-
----
-_Last modified: 10월 22, 2025_

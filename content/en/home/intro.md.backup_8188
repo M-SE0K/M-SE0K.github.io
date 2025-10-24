@@ -45,5 +45,3 @@ I'm Minseok Kwon, a Computer Science student aspiring to become a frontend devel
 
 
 
-
-<!-- Revision: 20251024-225644 -->

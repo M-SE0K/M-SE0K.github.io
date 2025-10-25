@@ -151,17 +151,5 @@ const minseokKwon = {
 
 ### 💭 "새로운 기술을 배우고 적용하는 것을 즐기며, 꾸준한 성장을 통해 팀에 기여하는 개발자가 되겠습니다."
 
-![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FM-SE0K&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)
-
 </div>
-Commit count: 1 at 2025년 10월 10일 금요일 19시 10분 59초 KST
-Commit count: 2 at 2025년 10월 10일 금요일 19시 12분 00초 KST
-Commit count: 3 at 2025년 10월 10일 금요일 19시 13분 03초 KST
-Commit count: 4 at 2025년 10월 10일 금요일 19시 14분 04초 KST
-Commit count: 5 at 2025년 10월 10일 금요일 19시 15분 05초 KST
-Commit count: 6 at 2025년 10월 10일 금요일 19시 16분 07초 KST
-Commit count: 7 at 2025년 10월 10일 금요일 19시 17분 08초 KST
-Commit count: 8 at 2025년 10월 10일 금요일 19시 18분 10초 KST
-Commit count: 9 at 2025년 10월 10일 금요일 19시 19분 11초 KST
-Commit count: 10 at 2025년 10월 10일 금요일 19시 20분 12초 KST
 

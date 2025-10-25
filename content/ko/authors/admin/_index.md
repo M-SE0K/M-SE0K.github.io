@@ -61,7 +61,7 @@ keywords:
 social:
   - icon: github
     icon_pack: fab
-    link: https://github.com/M-SE0K For a direct email link, use "mailto:test@example.org".
+    link: https://github.com/M-SE0K
   - icon: discord
     icon_pack: fab
   - icon: instagram
@@ -76,19 +76,7 @@ social:
   - icon: figma
     icon_pack: fab
     link: https://www.figma.com/@m_se0k
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
 
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
 ---
 **컴퓨터공학을 전공하며 프론트엔드 개발 역량을 키워온 권민석입니다. 기본기를 탄탄히 다진 후, React와 TypeScript 기반 프로젝트를 수행하며 실무 감각을 익혔습니다.
 특히 컴포넌트 기반 아키텍처에 대한 높은 이해도를 바탕으로 재사용성과 유지보수성을 고려한 개발을 해왔습니다.

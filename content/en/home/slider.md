@@ -41,7 +41,30 @@ content:
           size: cover
         media: Slider/img3.jpg
         fit: cover
-
+    - title: Travel
+      content: |
+       Traveling the world is another goal of mine.
+      align: center
+      background:
+        color: '#000'
+        image:
+          filename: Slider/img4.jpg
+          position: center
+          size: cover
+        media: Slider/img4.jpg
+        fit: cover
+    - title: Challenges
+      content: |
+       Continuously taking on various challenges.
+      align: center
+      background:
+        color: '#000'
+        image:
+          filename: Slider/img5.jpg
+          position: center
+          size: cover
+        media: Slider/img5.jpg
+        fit: cover
 design:
   slide_height: 100vh
   is_fullscreen: true

@@ -59,7 +59,7 @@ keywords:
 social:
   - icon: github
     icon_pack: fab
-    link: https://github.com/M-SE0K For a direct email link, use "mailto:test@example.org".
+    link: https://github.com/M-SE0K
   - icon: discord
     icon_pack: fab
   - icon: instagram
@@ -74,19 +74,7 @@ social:
   - icon: figma
     icon_pack: fab
     link: https://www.figma.com/@m_se0k
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
 
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
 ---
 **I'm Minseok Kwon, majoring in Computer Science with a focus on frontend development.
 After building a solid foundation in HTML, CSS, and JavaScript, I gained practical experience through React and TypeScript-based projects.

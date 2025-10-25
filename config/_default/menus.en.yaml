@@ -58,6 +58,19 @@ main:
     parent: travel
     weight: 42
 
+  - name: Hobby
+    url: /hobby/
+    weight: 50
+    identifier: hobby
+  - name: Movie
+    url: /hobby/movie
+    parent: hobby
+    weight: 51
+  - name: Music
+    url: /hobby/music
+    parent: hobby
+    weight: 52
+
   - name: Contact
     url: /contact/
     weight: 60

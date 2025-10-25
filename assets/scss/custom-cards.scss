@@ -8,6 +8,8 @@
  * 3. Photo Frame Card
  * 4. Stat Card
  * 5. Featured Image Card
+ * 6. Music Card
+ * 7. Movie Card
  */
 
 /* ========================================
@@ -509,6 +511,424 @@
   
   .featured-image-caption {
     font-size: 0.9rem;
+  }
+  
+  /* Music Card */
+  .music-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .music-container {
+    padding: 1rem;
+  }
+}
+
+/* ========================================
+   6. Music Card
+   ======================================== */
+
+.article-style img, .article-style video {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 0;
+}
+
+.music-container {
+  padding: 2rem;
+}
+
+.music-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 2rem 0;
+}
+
+.music-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.music-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.cd-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+}
+
+.cd-disc {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e0e0e0 0%, #757575 100%);
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.music-card.playing .cd-disc {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cd-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #424242 0%, #212121 100%);
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.cd-hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.8);
+  z-index: 3;
+}
+
+.album-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.play-pause-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.music-card:hover .play-pause-icon {
+  opacity: 1;
+}
+
+.music-card.playing .play-pause-icon {
+  opacity: 0;
+}
+
+.music-info {
+  position: relative;
+  z-index: 2;
+}
+
+.music-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.music-artist {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.music-duration {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-family: 'Courier New', monospace;
+}
+
+.audio-player {
+  display: none;
+}
+
+.dark .music-card {
+  background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+}
+
+/* Music Card Responsive */
+@media (max-width: 768px) {
+  .music-cards-grid {
+    gap: 0;
+  }
+  
+  .music-card {
+    padding: 1.5rem;
+  }
+  
+  .cd-container {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .cd-disc {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .album-cover {
+    width: auto;
+    height: auto;
+  }
+  
+  .cd-center {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cd-hole {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .music-title {
+    font-size: 1.1rem;
+  }
+  
+  .music-artist {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-container {
+    padding: 1rem;
+  }
+  
+  .music-card {
+    padding: 1rem;
+  }
+  
+  .cd-container {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .cd-disc {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .music-title {
+    font-size: 1rem;
+  }
+  
+  .music-artist {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   7. Movie Card
+   ======================================== */
+
+.movie-container {
+  padding: 2rem;
+}
+
+.movie-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 2rem 0;
+}
+
+.movie-card {
+  background: #1a1a2e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.movie-poster-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-poster {
+  transform: scale(1.05);
+}
+
+.movie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.movie-card:hover .movie-overlay {
+  opacity: 1;
+}
+
+.movie-rating {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 193, 7, 0.95);
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.movie-info-card {
+  background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+  padding: 1.5rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.movie-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.movie-meta {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 0.5rem;
+}
+
+.movie-genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.genre-tag {
+  background: rgba(102, 126, 234, 0.3);
+  color: #bbdefb;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.dark .movie-card {
+  background: #1a1a2e;
+}
+
+.dark .movie-info-card {
+  background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+}
+
+/* Movie Card Responsive */
+@media (max-width: 768px) {
+  .movie-cards-list {
+    gap: 0;
+  }
+  
+  .movie-card {
+    max-width: 100%;
+  }
+  
+  .movie-poster-container {
+    aspect-ratio: 2/3;
+  }
+  
+  .movie-title {
+    font-size: 1.1rem;
+  }
+  
+  .movie-meta {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-container {
+    padding: 1rem;
+  }
+  
+  .movie-card {
+    max-width: 100%;
+  }
+  
+  .movie-info-card {
+    padding: 1rem;
+  }
+  
+  .movie-title {
+    font-size: 1rem;
+  }
+  
+  .movie-meta {
+    font-size: 0.8rem;
+  }
+  
+  .genre-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
   }
 }
 

@@ -63,6 +63,19 @@ main:
     parent: travel
     weight: 42
 
+  - name: 취미
+    url: /hobby/
+    weight: 50
+    identifier: hobby
+  - name: 영화
+    url: /hobby/movie
+    parent: hobby
+    weight: 51
+  - name: 음악
+    url: /hobby/music
+    parent: hobby
+    weight: 52
+
   - name: 연락처
     url: /contact/
     weight: 60

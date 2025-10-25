@@ -312,7 +312,7 @@ ul.network- .big-icon {
 }
 
 .wg-portfolio .isotope {
-  height: auto;
+  height: auto !important;
 }
 
 .wg-portfolio .project-item {
@@ -320,6 +320,134 @@ ul.network- .big-icon {
   transform: none !important;  // override Isotope transforms
   scroll-snap-align: none;
   flex: 0 0 auto;
+}
+
+// Portfolio responsive styles
+@media (max-width: 1200px) {
+  .wg-portfolio .projects-container {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .wg-portfolio .project-item {
+    flex: 0 0 calc(50% - 0.5rem) !important;
+    max-width: calc(50% - 0.5rem) !important;
+    width: calc(50% - 0.5rem) !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .wg-portfolio .projects-container {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .wg-portfolio .project-item {
+    flex: 0 0 calc(50% - 0.5rem) !important;
+    max-width: calc(50% - 0.5rem) !important;
+    width: calc(50% - 0.5rem) !important;
+  }
+  
+  .card-simple {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wg-portfolio .projects-container {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .wg-portfolio .project-item {
+    flex: 0 0 calc(50% - 0.5rem) !important;
+    max-width: calc(50% - 0.5rem) !important;
+    width: calc(50% - 0.5rem) !important;
+  }
+  
+  .card-simple {
+    margin-top: 1rem;
+  }
+  
+  .card-simple h3 {
+    font-size: 1rem !important;
+  }
+  
+  .card-simple .article-metadata {
+    font-size: 0.85rem;
+  }
+  
+  // Ensure project card images maintain aspect ratio on mobile
+  .view-card .img-hover-zoom .article-banner {
+    height: 180px !important;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .wg-portfolio .projects-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .wg-portfolio .project-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .card-simple {
+    margin-top: 0.8rem;
+    padding: 1rem;
+  }
+  
+  .card-simple h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .card-simple .article-metadata {
+    font-size: 0.85rem;
+  }
+  
+  // Adjust image height for single column layout
+  .view-card .img-hover-zoom .article-banner {
+    height: 220px !important;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .wg-portfolio .projects-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .wg-portfolio .project-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .card-simple {
+    margin-top: 0.8rem;
+    padding: 1rem;
+  }
+  
+  .card-simple h3 {
+    font-size: 1rem !important;
+  }
+  
+  .card-simple .article-metadata {
+    font-size: 0.8rem;
+  }
+  
+  // Adjust image height for single column layout  
+  .view-card .img-hover-zoom .article-banner {
+    height: 200px !important;
+    object-fit: cover;
+  }
 }
 
 // -------------------------------------------------------------------

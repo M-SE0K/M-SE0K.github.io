@@ -244,6 +244,16 @@ summary: 좋아하는 음악과 플레이리스트
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 480px) {
+  .music-card-wrapper .music-card {
+    min-width: auto;
+  }
+  
+  .music-reason {
+    padding: 1rem;
+  }
+}
 </style>
 
 <script>

@@ -74,7 +74,45 @@
 
 ---
 
-### 3. Travel Card (`travel-card.html`)
+### 3. Movie Card (`movie-card.html`)
+
+**용도**: 영화 포스터와 감상평 카드
+
+**특징**:
+- 영화 포스터 디자인 (2:3 비율)
+- 호버 시 확대 효과
+- 별점 표시
+- 감독, 연도, 러닝타임 정보
+- 장르 태그
+- 반응형 디자인
+
+**사용 위치**:
+- `content/ko/hobby/movie/index.md`
+- `content/en/hobby/movie/index.md`
+
+**사용 예시**:
+```html
+<div class="movie-card">
+  <div class="movie-poster-container">
+    <img src="/movie/poster.jpg" alt="영화제목" class="movie-poster">
+    <div class="movie-rating">⭐ 9.5</div>
+    <div class="movie-overlay">
+      <span>클릭하여 상세보기</span>
+    </div>
+  </div>
+  <div class="movie-info-card">
+    <h3 class="movie-title">영화 제목</h3>
+    <p class="movie-meta">감독 | 연도 | 시간</p>
+    <div class="movie-genre">
+      <span class="genre-tag">장르1</span>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+### 4. Travel Card (`travel-card.html`)
 
 **용도**: 여행지 정보를 카드 형태로 표시
 
@@ -105,7 +143,7 @@
 
 ---
 
-### 4. Photo Frame Card (`photo-frame-card.html`)
+### 5. Photo Frame Card (`photo-frame-card.html`)
 
 **용도**: 폴라로이드 스타일 사진 갤러리
 
@@ -129,7 +167,7 @@
 
 ---
 
-### 5. Stat Card (`stat-card.html`)
+### 6. Stat Card (`stat-card.html`)
 
 **용도**: 통계 정보를 카드 형태로 표시
 
@@ -155,7 +193,7 @@
 
 ---
 
-### 6. Featured Image Card (`featured-image-card.html`)
+### 7. Featured Image Card (`featured-image-card.html`)
 
 **용도**: 페이지 상단 대표 이미지 표시
 

@@ -1,0 +1,380 @@
+{{ $item := .item }}
+
+{{/* Get movie parameters */}}
+{{ $poster := $item.Params.poster | default "/movie/default.jpg" }}
+{{ $rating := $item.Params.rating | default "N/A" }}
+{{ $director := $item.Params.director | default "Unknown" }}
+{{ $year := $item.Params.year | default "Unknown" }}
+{{ $duration := $item.Params.duration | default "Unknown" }}
+{{ $genres := $item.Params.genres | default (slice "Unknown") }}
+
+{{/* Extract review content */}}
+{{ $content := $item.Content }}
+{{ $hasReview := findRE `##\s+💭` $content }}
+{{ $reviewContent := "" }}
+{{ if $hasReview }}
+  {{ $parts := split $content "## 💭" }}
+  {{ if gt (len $parts) 1 }}
+    {{ $reviewContent = index $parts 1 | markdownify }}
+  {{ end }}
+{{ else }}
+  {{ $reviewContent = $item.Content | markdownify }}
+{{ end }}
+
+<div class="movie-card-wrapper">
+  <div class="movie-card">
+    <div class="movie-poster-container">
+      <img src="{{ $poster }}" alt="{{ $item.Title }}" class="movie-poster">
+      <div class="movie-rating">⭐ {{ $rating }}</div>
+      <div class="movie-overlay">
+        <span style="color: white; font-weight: bold;">클릭하여 상세보기</span>
+      </div>
+    </div>
+    <div class="movie-info-card">
+      <h3 class="movie-title">{{ $item.Title }}</h3>
+      <p class="movie-meta">{{ $director }} | {{ $year }} | {{ $duration }}</p>
+      <div class="movie-genre">
+        {{ range $genres }}
+          <span class="genre-tag">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="movie-reason">
+    {{ if $reviewContent }}
+      <div class="movie-reason-content">{{ $reviewContent | safeHTML }}</div>
+    {{ end }}
+  </div>
+</div>
+
+<!-- 
+  Movie Card Component - Styles only
+  
+  Usage:
+    Include this in movie page markdown files
+  
+  Features:
+    - Movie poster design
+    - Hover effects
+    - Rating display
+    - Movie review section
+    - Responsive design
+-->
+
+<style>
+    /* 영화 페이지 컨테이너 크기 확장 */
+    .article-container {
+      max-width: 1400px !important;
+      margin-top: 2rem;
+    }
+    
+    .page-header-movie {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+    }
+    
+    .page-header-movie h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #667eea;
+    }
+    
+    .page-header-movie .subtitle {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin: 0;
+    }
+    
+    .dark .page-header-movie {
+      background: linear-gradient(135deg, rgba(42, 42, 58, 0.5) 0%, rgba(58, 58, 74, 0.5) 100%);
+    }
+    
+    .dark .page-header-movie h1 {
+      color: #bbdefb;
+    }
+    
+    .dark .page-header-movie .subtitle {
+      color: #adb5bd;
+    }
+    
+    .movie-container {
+      padding: 2rem;
+    }
+    
+    .movie-cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 2rem 0;
+    }
+    
+    /* Movie card wrapper */
+    .movie-card-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    
+    .movie-card-wrapper .movie-card {
+      flex: 0 0 auto;
+      min-width: 280px;
+      max-width: 280px;
+    }
+    
+    .movie-card-wrapper .movie-reason {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    .movie-card {
+      background: #1a1a2e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .movie-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    
+    .movie-poster-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2/3;
+      overflow: hidden;
+    }
+    
+    .movie-poster {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    .movie-card:hover .movie-poster {
+      transform: scale(1.05);
+    }
+    
+    .movie-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+    }
+    
+    .movie-card:hover .movie-overlay {
+      opacity: 1;
+    }
+    
+    .movie-rating {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+      z-index: 2;
+    }
+    
+    .movie-info-card {
+      background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+      padding: 1.5rem;
+      border-radius: 0 0 15px 15px;
+    }
+    
+    .movie-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+    
+    .movie-meta {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 0.5rem;
+    }
+    
+    .movie-genre {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    
+    .genre-tag {
+      background: rgba(102, 126, 234, 0.3);
+      color: #bbdefb;
+      padding: 0.25rem 0.75rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    
+    /* 좋아하는 이유 섹션 */
+    .movie-reason {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+      border-left: 4px solid #667eea;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .movie-reason:hover {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    }
+    
+    .movie-reason h4 {
+      color: white;
+      font-size: 1rem;
+      margin: 0 0 0.75rem 0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .movie-reason-icon {
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+    
+    .movie-reason p,
+.movie-reason div p,
+.movie-reason-content p {
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.movie-reason-content {
+  color: #fff;
+}
+
+.movie-reason-content * {
+  color: #fff;
+}
+    
+    .movie-reason p:last-child,
+    .movie-reason div p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .dark .movie-card {
+      background: #1a1a2e;
+    }
+    
+    .dark .movie-info-card {
+      background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+    }
+    
+    .dark .movie-reason {
+      background: linear-gradient(135deg, rgba(42, 42, 58, 0.3) 0%, rgba(58, 58, 74, 0.3) 100%);
+      border-left-color: #bbdefb;
+    }
+    
+    .dark .movie-reason:hover {
+      background: linear-gradient(135deg, rgba(42, 42, 58, 0.5) 0%, rgba(58, 58, 74, 0.5) 100%);
+    }
+    
+    .dark .movie-reason h4 {
+      color: white;
+    }
+    
+    .dark .movie-reason p,
+.dark .movie-reason div p,
+.dark .movie-reason-content p {
+  color: #fff;
+}
+
+.dark .movie-reason-content {
+  color: #fff;
+}
+
+.dark .movie-reason-content * {
+  color: #fff;
+}
+    
+    /* Movie Responsive */
+    @media (max-width: 768px) {
+      .page-header-movie {
+        padding: 2rem 1rem 1.5rem;
+      }
+      
+      .page-header-movie h1 {
+        font-size: 2rem;
+      }
+      
+      .page-header-movie .subtitle {
+        font-size: 1rem;
+      }
+      
+      .movie-card-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .movie-card-wrapper .movie-card {
+        min-width: auto;
+        max-width: 100%;
+      }
+      
+      .movie-poster-container {
+        aspect-ratio: 2/3;
+      }
+      
+      .movie-title {
+        font-size: 1.1rem;
+      }
+      
+      .movie-meta {
+        font-size: 0.85rem;
+      }
+      
+      .movie-reason {
+        padding: 0.75rem 1rem;
+      }
+      
+      .movie-reason h4 {
+        font-size: 0.9rem;
+      }
+      
+      .movie-reason p,
+      .movie-reason div p {
+        font-size: 0.85rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .movie-card-wrapper .movie-card {
+        max-width: 100%;
+      }
+      
+      .movie-reason {
+        padding: 1rem;
+      }
+    }
+</style>
+    

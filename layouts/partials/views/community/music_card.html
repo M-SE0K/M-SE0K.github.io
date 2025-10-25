@@ -1,0 +1,481 @@
+{{ $item := .item }}
+
+{{/* Get music parameters */}}
+{{ $album := $item.Params.album | default "/music/default.jpg" }}
+{{ $audio := $item.Params.audio | default "" }}
+{{ $artist := $item.Params.artist | default "Unknown" }}
+{{ $duration := $item.Params.duration | default "N/A" }}
+
+{{/* Extract review content */}}
+{{ $content := $item.Content }}
+{{ $hasReview := findRE `##\s+💭` $content }}
+{{ $reviewContent := "" }}
+{{ if $hasReview }}
+  {{ $parts := split $content "## 💭" }}
+  {{ if gt (len $parts) 1 }}
+    {{ $reviewContent = index $parts 1 | markdownify }}
+  {{ end }}
+{{ else }}
+  {{ $reviewContent = $item.Content | markdownify }}
+{{ end }}
+
+<div class="music-card-wrapper">
+  <div class="music-card" data-music="{{ $item.Title | urlize }}">
+    <div class="cd-container">
+      <div class="cd-disc">
+        <div class="cd-center">
+          <div class="cd-hole"></div>
+        </div>
+        <img src="{{ $album }}" alt="{{ $item.Title }}" class="album-cover">
+      </div>
+      <div class="play-pause-icon">▶</div>
+    </div>
+    <div class="music-info">
+      <h3 class="music-title">{{ $item.Title }}</h3>
+      <p class="music-artist">{{ $artist }}</p>
+      <p class="music-duration">{{ $duration }}</p>
+    </div>
+    {{ if $audio }}
+    <audio class="audio-player" preload="metadata">
+      <source src="{{ $audio }}" type="audio/mpeg">
+    </audio>
+    {{ end }}
+  </div>
+  <div class="music-reason">
+    {{ if $reviewContent }}
+      <h4><span class="music-reason-icon">◆</span> 좋아하는 이유</h4>
+      <div class="music-reason-content">{{ $reviewContent | safeHTML }}</div>
+    {{ end }}
+  </div>
+</div>
+<style>
+  /* 음악 페이지 컨테이너 크기 확장 */
+  .article-container {
+    max-width: 1400px !important;
+  }
+  
+  .page-header-music {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .page-header-music h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #667eea;
+  }
+  
+  .page-header-music .subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin: 0;
+  }
+  
+  .dark .page-header-music {
+    background: linear-gradient(135deg, rgba(42, 42, 58, 0.5) 0%, rgba(58, 58, 74, 0.5) 100%);
+  }
+  
+  .dark .page-header-music h1 {
+    color: #bbdefb;
+  }
+  
+  .dark .page-header-music .subtitle {
+    color: #adb5bd;
+  }
+  
+  .music-container {
+    padding: 2rem;
+  }
+  
+  .music-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 2rem 0;
+  }
+  
+  /* Music card wrapper */
+  .music-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .music-card-wrapper .music-card {
+    flex: 0 0 auto;
+    min-width: 320px;
+  }
+  
+  .music-card-wrapper .music-reason {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .music-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .music-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  }
+  
+  .cd-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .cd-disc {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e0e0e0 0%, #757575 100%);
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .music-card.playing .cd-disc {
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cd-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #424242 0%, #212121 100%);
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+  }
+  
+  .cd-hole {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.8);
+  }
+  
+  .album-cover {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .play-pause-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+  }
+  
+  .music-card:hover .play-pause-icon {
+    opacity: 1;
+  }
+  
+  .music-card.playing .play-pause-icon {
+    opacity: 0;
+  }
+  
+  .music-info {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .music-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .music-artist {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+  
+  .music-duration {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .audio-player {
+    display: none;
+  }
+  
+  /* 좋아하는 이유 섹션 */
+  .music-reason {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    border-left: 4px solid #667eea;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .music-reason:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  }
+  
+  .music-reason h4 {
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 0.75rem 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .music-reason-icon {
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+  
+  .music-reason p,
+  .music-reason div p,
+  .music-reason-content p {
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+  }
+  
+  .music-reason p:last-child,
+  .music-reason div p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .music-reason-content {
+    color: #fff;
+  }
+  
+  .music-reason-content * {
+    color: #fff;
+  }
+  
+  /* 다크모드 지원 */
+  .dark .music-card {
+    background: linear-gradient(135deg, #2a2a3a 0%, #3a3a4a 100%);
+  }
+  
+  .dark .music-reason {
+    background: linear-gradient(135deg, rgba(42, 42, 58, 0.3) 0%, rgba(58, 58, 74, 0.3) 100%);
+    border-left-color: #bbdefb;
+  }
+  
+  .dark .music-reason:hover {
+    background: linear-gradient(135deg, rgba(42, 42, 58, 0.5) 0%, rgba(58, 58, 74, 0.5) 100%);
+  }
+  
+  .dark .music-reason h4 {
+    color: white;
+  }
+  
+  .dark .music-reason p,
+  .dark .music-reason div p,
+  .dark .music-reason-content p {
+    color: #fff;
+  }
+  
+  .dark .music-reason-content {
+    color: #fff;
+  }
+  
+  .dark .music-reason-content * {
+    color: #fff;
+  }
+  
+  /* Music Responsive */
+  @media (max-width: 768px) {
+    .page-header-music {
+      padding: 2rem 1rem 1.5rem;
+    }
+    
+    .page-header-music h1 {
+      font-size: 2rem;
+    }
+    
+    .page-header-music .subtitle {
+      font-size: 1rem;
+    }
+    
+    .music-card-wrapper {
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .music-card-wrapper .music-card {
+      min-width: auto;
+    }
+    
+    .cd-container {
+      width: 160px;
+      height: 160px;
+    }
+    
+    .cd-disc {
+      width: 160px;
+      height: 160px;
+    }
+    
+    .album-cover {
+      top: 15px;
+      left: 15px;
+      width: 130px;
+      height: 130px;
+    }
+    
+    .cd-center {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .cd-hole {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .music-title {
+      font-size: 1.1rem;
+    }
+    
+    .music-artist {
+      font-size: 0.9rem;
+    }
+    
+    .music-reason {
+      padding: 0.75rem 1rem;
+    }
+    
+    .music-reason h4 {
+      font-size: 0.9rem;
+    }
+    
+    .music-reason p,
+    .music-reason div p,
+    .music-reason-content p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .music-card-wrapper .music-card {
+      min-width: auto;
+    }
+    
+    .music-reason {
+      padding: 1rem;
+    }
+  }
+  </style>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const musicCards = document.querySelectorAll('.music-card');
+    let currentlyPlaying = null;
+    
+    musicCards.forEach(card => {
+      const audio = card.querySelector('.audio-player');
+      const playIcon = card.querySelector('.play-pause-icon');
+      
+      if (!audio) return;
+      
+      card.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // 다른 음악이 재생 중이면 정지
+        if (currentlyPlaying && currentlyPlaying !== audio) {
+          currentlyPlaying.pause();
+          currentlyPlaying.currentTime = 0;
+          const prevCard = currentlyPlaying.closest('.music-card');
+          prevCard.classList.remove('playing');
+          const prevIcon = prevCard.querySelector('.play-pause-icon');
+          prevIcon.textContent = '▶';
+        }
+        
+        // 현재 음악 재생/일시정지
+        if (audio.paused) {
+          audio.play().then(() => {
+            card.classList.add('playing');
+            playIcon.textContent = '⏸';
+            currentlyPlaying = audio;
+          }).catch(error => {
+            console.error('음악 재생 오류:', error);
+          });
+        } else {
+          audio.pause();
+          card.classList.remove('playing');
+          playIcon.textContent = '▶';
+          currentlyPlaying = null;
+        }
+      });
+      
+      // 음악이 끝났을 때
+      audio.addEventListener('ended', function() {
+        card.classList.remove('playing');
+        playIcon.textContent = '▶';
+        currentlyPlaying = null;
+      });
+      
+      // 음악 로드 완료 시 재생 시간 업데이트
+      audio.addEventListener('loadedmetadata', function() {
+        const duration = Math.floor(audio.duration);
+        const minutes = Math.floor(duration / 60);
+        const seconds = duration % 60;
+        const durationElement = card.querySelector('.music-duration');
+        if (durationElement && !isNaN(duration)) {
+          durationElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+      });
+    });
+  });
+  </script>
+  
+  

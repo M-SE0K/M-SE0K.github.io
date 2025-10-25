@@ -32,7 +32,49 @@
 
 ---
 
-### 2. Travel Card (`travel-card.html`)
+### 2. Music Card (`music-card.html`)
+
+**용도**: 음악 플레이어 카드 - MP3 파일 재생
+
+**특징**:
+- CD 앨범 디자인
+- 클릭으로 재생/일시정지
+- 회전 애니메이션
+- HTML5 오디오 플레이어
+- 앨범 커버 지원
+- 반응형 디자인
+
+**사용 위치**:
+- `content/ko/hobby/music/index.md`
+- `content/en/hobby/music/index.md`
+
+**사용 예시**:
+```html
+<div class="music-card">
+  <div class="cd-container">
+    <div class="cd-disc">
+      <!-- 앨범 커버 (선택사항) -->
+      <img src="/music/album-cover.jpg" alt="Album" class="album-cover">
+      <div class="cd-center">
+        <div class="cd-hole"></div>
+      </div>
+    </div>
+    <div class="play-pause-icon">▶</div>
+  </div>
+  <div class="music-info">
+    <h3 class="music-title">노래 제목</h3>
+    <p class="music-artist">가수 이름</p>
+    <p class="music-duration">03:45</p>
+  </div>
+  <audio class="audio-player" preload="metadata">
+    <source src="/music/my-song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+```
+
+---
+
+### 3. Travel Card (`travel-card.html`)
 
 **용도**: 여행지 정보를 카드 형태로 표시
 
@@ -63,7 +105,7 @@
 
 ---
 
-### 3. Photo Frame Card (`photo-frame-card.html`)
+### 4. Photo Frame Card (`photo-frame-card.html`)
 
 **용도**: 폴라로이드 스타일 사진 갤러리
 
@@ -87,7 +129,7 @@
 
 ---
 
-### 4. Stat Card (`stat-card.html`)
+### 5. Stat Card (`stat-card.html`)
 
 **용도**: 통계 정보를 카드 형태로 표시
 
@@ -113,7 +155,7 @@
 
 ---
 
-### 5. Featured Image Card (`featured-image-card.html`)
+### 6. Featured Image Card (`featured-image-card.html`)
 
 **용도**: 페이지 상단 대표 이미지 표시
 

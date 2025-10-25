@@ -41,7 +41,30 @@ content:
           size: cover
         media: Slider/img3.jpg
         fit: cover
-
+    - title: 여행
+      content: |
+       전 세계 곳곳을 여행하는 것이 저의 또 다른 목표입니다.
+      align: center
+      background:
+        color: '#000'
+        image:
+          filename: Slider/img4.jpg
+          position: center
+          size: cover
+        media: Slider/img4.jpg
+        fit: cover
+    - title: 챌린지
+      content: |
+       여러 챌린지에 끊임 없이 도전합니다.
+      align: center
+      background:
+        color: '#000'
+        image:
+          filename: Slider/img5.jpg
+          position: center
+          size: cover
+        media: Slider/img5.jpg
+        fit: cover
 design:
   slide_height: 100vh
   is_fullscreen: true

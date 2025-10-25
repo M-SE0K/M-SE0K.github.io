@@ -10,6 +10,7 @@ director: "김가람"
 year: 2021
 duration: "10부작 드라마"
 genres: ["로맨스", "드라마", "성장"]
+namuwiki_url: "https://namu.wiki/w/알고있지만"
 ---
 
 # 알고있지만

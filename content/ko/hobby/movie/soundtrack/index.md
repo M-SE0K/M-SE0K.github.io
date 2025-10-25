@@ -10,6 +10,7 @@ director: "김희원"
 year: 2022
 duration: "4부작 드라마"
 genres: ["로맨스", "음악", "힐링"]
+namuwiki_url: "https://namu.wiki/w/사운드트랙%20%231"
 ---
 
 # 사운드트랙 #1

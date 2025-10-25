@@ -10,6 +10,7 @@ director: "제임스 카메론"
 year: 2022
 duration: "192분"
 genres: ["SF", "액션", "모험"]
+namuwiki_url: "https://namu.wiki/w/아바타%3A%20물의%20길"
 ---
 
 # 아바타: 물의 길

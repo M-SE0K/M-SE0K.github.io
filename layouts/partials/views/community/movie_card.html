@@ -7,6 +7,13 @@
 {{ $year := $item.Params.year | default "Unknown" }}
 {{ $duration := $item.Params.duration | default "Unknown" }}
 {{ $genres := $item.Params.genres | default (slice "Unknown") }}
+{{ $namuwikiUrl := $item.Params.namuwiki_url | default "" }}
+
+{{/* Determine the link URL */}}
+{{ $linkUrl := $item.Permalink }}
+{{ if $namuwikiUrl }}
+  {{ $linkUrl = $namuwikiUrl }}
+{{ end }}
 
 {{/* Extract review content */}}
 {{ $content := $item.Content }}
@@ -22,24 +29,26 @@
 {{ end }}
 
 <div class="movie-card-wrapper">
-  <div class="movie-card">
-    <div class="movie-poster-container">
-      <img src="{{ $poster }}" alt="{{ $item.Title }}" class="movie-poster">
-      <div class="movie-rating">⭐ {{ $rating }}</div>
-      <div class="movie-overlay">
-        <span style="color: white; font-weight: bold;">클릭하여 상세보기</span>
+  <a href="{{ $linkUrl }}" class="movie-card-link" {{ if $namuwikiUrl }}target="_blank" rel="noopener noreferrer"{{ end }}>
+    <div class="movie-card">
+      <div class="movie-poster-container">
+        <img src="{{ $poster }}" alt="{{ $item.Title }}" class="movie-poster">
+        <div class="movie-rating">⭐ {{ $rating }}</div>
+        <div class="movie-overlay">
+          <span style="color: white; font-weight: bold;">클릭하여 상세보기</span>
+        </div>
+      </div>
+      <div class="movie-info-card">
+        <h3 class="movie-title">{{ $item.Title }}</h3>
+        <p class="movie-meta">{{ $director }} | {{ $year }} | {{ $duration }}</p>
+        <div class="movie-genre">
+          {{ range $genres }}
+            <span class="genre-tag">{{ . }}</span>
+          {{ end }}
+        </div>
       </div>
     </div>
-    <div class="movie-info-card">
-      <h3 class="movie-title">{{ $item.Title }}</h3>
-      <p class="movie-meta">{{ $director }} | {{ $year }} | {{ $duration }}</p>
-      <div class="movie-genre">
-        {{ range $genres }}
-          <span class="genre-tag">{{ . }}</span>
-        {{ end }}
-      </div>
-    </div>
-  </div>
+  </a>
   <div class="movie-reason">
     {{ if $reviewContent }}
       <div class="movie-reason-content">{{ $reviewContent | safeHTML }}</div>
@@ -120,15 +129,19 @@
       margin-bottom: 2rem;
     }
     
-    .movie-card-wrapper .movie-card {
-      flex: 0 0 auto;
-      min-width: 280px;
-      max-width: 280px;
-    }
+
     
     .movie-card-wrapper .movie-reason {
       flex: 1;
       min-width: 0;
+    }
+    
+    .movie-card-link {
+      text-decoration: none;
+      display: block;
+      flex: 0 0 auto;
+      min-width: 280px;
+      max-width: 280px;
     }
     
     .movie-card {
@@ -262,18 +275,18 @@
     .movie-reason p,
 .movie-reason div p,
 .movie-reason-content p {
-  color: #fff;
+  color: #000000;
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0 0 1rem 0;
 }
 
 .movie-reason-content {
-  color: #fff;
+  color: #000000;
 }
 
 .movie-reason-content * {
-  color: #fff;
+  color: #000000;
 }
     
     .movie-reason p:last-child,
@@ -336,6 +349,11 @@
         margin-bottom: 1.5rem;
       }
       
+      .movie-card-link {
+        min-width: auto;
+        max-width: 100%;
+      }
+      
       .movie-card-wrapper .movie-card {
         min-width: auto;
         max-width: 100%;
@@ -368,6 +386,10 @@
     }
     
     @media (max-width: 480px) {
+      .movie-card-link {
+        max-width: 100%;
+      }
+      
       .movie-card-wrapper .movie-card {
         max-width: 100%;
       }

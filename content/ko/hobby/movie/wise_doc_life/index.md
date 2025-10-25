@@ -10,6 +10,7 @@ director: "신원호"
 year: "2020-2021"
 duration: "시즌1,2"
 genres: ["의학", "힐링", "우정"]
+namuwiki_url: "https://namu.wiki/w/슬기로운%20의사생활"
 ---
 
 # 슬기로운 의사생활

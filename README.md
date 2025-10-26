@@ -3,6 +3,14 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-M--SE0K-blue?style=for-the-badge&logo=github)](https://m-se0k.github.io/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577)
 
+
+## 🖼️ Portfolio Preview
+
+<div align="center">
+  <img src="preview.png" alt="M-SE0K Portfolio Preview" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
+
 ## 🎓 About Me
 
 전북대학교 컴퓨터공학부에서 **프론트엔드 개발**을 공부하고 있는 학생 개발자입니다.  

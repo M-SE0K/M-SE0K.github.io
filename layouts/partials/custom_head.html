@@ -77,3 +77,35 @@
 <!-- Naver 웹마스터 도구에서 제공하는 메타 태그를 아래에 추가하세요 -->
 <!-- 예: <meta name="naver-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
 
+<script>
+  // Search enhancement: Add keywords when searching
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track search functionality
+    if (typeof wcSearch !== 'undefined') {
+      const originalSearch = wcSearch;
+      wcSearch = function(query) {
+        // Enhance search query
+        if (query && query.includes('권민석')) {
+          // Add 전북대학교 as related keyword
+          query = query + ' 전북대학교';
+        }
+        return originalSearch(query);
+      };
+    }
+    
+    // Monitor search input
+    setTimeout(function() {
+      const searchInput = document.querySelector('input[type="search"], #search-query, .search-box input');
+      if (searchInput) {
+        searchInput.addEventListener('input', function() {
+          const value = this.value;
+          if (value.includes('권민석') && !value.includes('전북대학교')) {
+            // Suggest adding 전북대학교 keyword
+            const suggested = value + ' 전북대학교';
+            console.log('Suggested search:', suggested);
+          }
+        });
+      }
+    }, 1000);
+  });
+  </script>

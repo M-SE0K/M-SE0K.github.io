@@ -9,7 +9,7 @@ summary: Travel records
 
 Briefly organizing travels, photos, and reviews.
 
-## Travel List1
+## Travel List
 
 - [Nagoya](/en/travel/nagoya/)
 - [Hong Kong/Macau](/en/travel/hongkong-macau/)

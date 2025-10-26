@@ -17,6 +17,7 @@
 사용자에게 즐거운 경험을 선사하는 웹을 만드는 것을 목표로 하고 있습니다.
 
 - 🏫 **소속**: 전북대학교 컴퓨터공학부
+- 🎉 **출신** : 대한민국 광주광역시 북구
 - 💻 **관심 분야**: Frontend Development, Web Development, UI/UX
 - 📧 **Email**: [Contact Me](https://m-se0k.github.io/contact/)
 - 📱 **Phone**: +82-8770-4710

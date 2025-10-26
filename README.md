@@ -144,7 +144,7 @@ const minseokKwon = {
     frontend: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
     backend: ["Node.js", "Express", "Firebase"],
     stateManagement: ["Redux", "Recoil"],
-    tools: ["Git", "GitHub", "Figma", "VS Code"]
+    tools: ["Git", "GitHub", "Figma", "VS Code", "Notion"]
   },
   currentFocus: "Building user-friendly web experiences",
   funFact: "I love solving algorithm problems every day! 🧩"

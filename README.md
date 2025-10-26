@@ -3,11 +3,13 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-M--SE0K-blue?style=for-the-badge&logo=github)](https://m-se0k.github.io/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577)
 
+
 ## 🖼️ Portfolio Preview
 
 <div align="center">
   <img src="preview.png" alt="M-SE0K Portfolio Preview" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
+
 
 ## 🎓 About Me
 

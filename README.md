@@ -3,12 +3,21 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-M--SE0K-blue?style=for-the-badge&logo=github)](https://m-se0k.github.io/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=seg7577)](https://solved.ac/seg7577)
 
+
+## 🖼️ Portfolio Preview
+
+<div align="center">
+  <img src="preview.png" alt="M-SE0K Portfolio Preview" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
+
 ## 🎓 About Me
 
 전북대학교 컴퓨터공학부에서 **프론트엔드 개발**을 공부하고 있는 학생 개발자입니다.  
 사용자에게 즐거운 경험을 선사하는 웹을 만드는 것을 목표로 하고 있습니다.
 
 - 🏫 **소속**: 전북대학교 컴퓨터공학부
+- 🎉 **출신** : 대한민국 광주광역시 북구
 - 💻 **관심 분야**: Frontend Development, Web Development, UI/UX
 - 📧 **Email**: [Contact Me](https://m-se0k.github.io/contact/)
 - 📱 **Phone**: +82-8770-4710
